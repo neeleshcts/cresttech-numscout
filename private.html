@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/numscout-favs/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/numscout-favs//apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/numscout-favs//apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/numscout-favs//apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/numscout-favs//apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/numscout-favs//apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/numscout-favs//apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/numscout-favs//apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/numscout-favs//apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/numscout-favs//android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/numscout-favs//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/numscout-favs//favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/numscout-favs//favicon-16x16.png">
+    <link rel="manifest" href="assets/numscout-favs//manifest.json">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0/dist/css/select2.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="index2.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">            
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/numscout-favs//ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>numscout-Unternehmen</title>
+</head>
+<body>
+        <header class="numscout-header">
+        <div class="container">
+            <nav class="navbar navbar-expand-xl justify-content-between align-items-center">
+                    <!-- logo -->
+                    <a class="navbar-brand" href="/">
+                        <span>
+                            <img class="" src="assets/svgs/numscout-logo-header.svg" />
+                        </span>
+                        
+                    </a>
+                    <!-- Collapsible Navigation bar -->
+                    <div id="navbarNav" class="collapse navbar-collapse">
+                        <!-- Navigation tabs -->
+
+                                                    
+                    </div> 
+                    <!-- Offcanvas preparation -->
+                     <!-- d-none is set please remove it to make it visible -->
+                      
+                    <div id="offcanvasNavbar" class="offcanvas offcanvas-end numscout-offcanvas" tabindex="-1" data-bs-backdrop="static"  aria-labelledby="offcanvasNavBarLabel">                        
+                        <!-- Navigation tabs -->
+                         <div class="container">
+                             <div class="offcanvas-header">
+                                <button type="button" class="btn-close" aria-label="Close">
+                                    <span class="offcanvas-header-button-icon">X</span>
+                                </button>
+                             </div>
+    
+                             <div class="offcanvas-body ">
+                                 <div class="w-100 d-flex d-xl-none justify-content-start align-items-center">
+                                     <div class="numscout-offcanvas-quick-links">
+                                         <ul class="navbar-nav align-items-start gap-3">
+                                             <li class="nav-item"><a class="nav-link" href="companies.html">| Für Unternehmen </a></li>                                  
+                                             <li class="nav-item"><a class="nav-link active" href="private.html">| Für Private </a></li>                                     
+                                             <li class="nav-item"><a class="nav-link" href="blog.html">| Blog</a></li>
+                                             <li class="nav-item d-xl-none"><a class="nav-link" href="#">| Kontakt</a></li>
+                                         </ul>
+                                     </div>                                                                               
+                                 </div>
+                             </div> 
+                             <!-- offcanvas footer is not available in bootstrap  -->
+                             <div class="offcanvas-footer">
+                                <small>© 2026 by numscouters gmbh </small>
+                                <br>
+                                <small>
+                                    Impressum | AGB | Datenschutz
+                                </small>
+                             </div>
+                         </div>
+                         
+                        </div> 
+                        <div class="w-100 d-none d-xl-flex justify-content-center align-items-center">
+                             <div class="quick-links">
+                                 <ul class="navbar-nav align-items-center gap-3">
+                                     <li class="nav-item">
+                                        <a href="companies.html" >Für Unternehmen </a>
+                                     </li>  
+                                     <li class="nav-item">|</li>                                                                                                  
+                                     <li class="nav-item">
+                                        <a href="private.html" >Für Private</a>
+                                    </li>        
+                                    <li class="nav-item">|</li>
+                                     <li class="nav-item">
+                                        <a href="blog.html" >Blog</a>
+                                    </li>                                     
+                                 </ul>
+                             </div>                                                                               
+                        </div>
+                    
+            
+                    <!-- Language switch -->
+                    <div class="d-flex justify-content-center align-items-center gap-2 gap-sm-3">
+                        <div class="language-switch">
+                            <ul class="d-flex justify-content-center align-items-center gap-1 h-100">
+                                <li class="">DE</li>
+                                <li class="">|</li>
+                                <li class="">EN</li>
+                            </ul>
+                        </div>
+        
+                         <!-- Sign-in tab and contact -->
+                         <div class="signin-contact">
+                            <ul class="d-flex justify-content-start align-items-center gap-2 h-100">
+                                <li class="user">
+                                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#userCreds">
+                                        <img src="assets/svgs/user.svg" />
+                                    </button>                                    
+                                </li>
+                                <li class="d-none d-xl-block kontakt">
+                                    <a class="" href="#">Kontakt</a>
+                                </li>
+                            </ul>
+                        </div>                    
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                                <div class="hamburger-icon">
+                                    <div class="hamburger-icon-strips"></div>
+                                    <div class="hamburger-icon-strips"></div>
+                                    <div class="hamburger-icon-strips"></div>
+                                </div>
+                        </button>
+                    </div>
+                
+                    <!-- Collapsible buttons -->    
+                </nav>            
+            </div>
+        </header>
+        <!-- main -->
+         <main>
+            <!-- banner section -->
+             <section class="companies-hero-section">
+                 <div class="container">
+                     <div class="row row-cols-1 row-cols-md-2">
+                         <div class="col align-self-center">
+                             <h1 class="text-uppercase">Für Private</h1>
+                             <p>Mit numscout rechnest du alle lebensrelevanten Zahlen, für dich, deine Familie, deine Freunde oder deinen Partner. Willst du jemanden wirklich kennenlernen? Dann lass numscout seine Zahlen ermitteln.</p>
+                         </div>
+                         <div class="col align-self-center image-col">
+                             <div class="hero-image-container">
+                             <img class="companies-hero-image w-100" src="assets/header-img-private.png" />                          
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </section>
+
+            <!-- business section -->
+             <section class="business-section">
+                <div class="container">
+                    <div class="business-section-heading">
+                        <h2>Starte deine Reise zu mehr Klarheit mit numscout</h2>
+                        <p>
+					        Du willst deine persönlichen Zahlen entschlüsseln – sei es zu deiner Persönlichkeit, deiner Familie, deinem Zuhause, deiner Telefonnummer oder sogar deinem Haustier? <i>numscout</i> hilft dir, deine Lebenszahlen, Stärken und Chancen zu berechnen und zu verstehen.				
+                        </p>
+                    </div>
+
+                    <div class="row business-row">
+                        <!-- business-col-1 companies-->
+                        <div class="business-col col-sm-6 col-xl-4 mt-lg-5">
+                            <div class="container container-business-img-1">
+                                <img class="business-img-1" src="assets/svgs/Unternehmen/Unternehmen-img.svg" alt="Unternehmen"/>                                
+                            </div>
+                            <h3 class="text-uppercase">Unternehmen</h3>
+                            <p>Bei dir hat schon lange kein neuer Kunde mehr angebissen? Dann überprüfe doch einmal die Daten deines Unternehmens. Die Zahlen haben bestimmt eine Antwort auf deine Fragen.</p>
+                        </div>
+                        <!-- business-col-2 Address-->
+                        <div class="business-col col-12 col-sm-6 col-xl-4 mt-lg-5">
+                            <div class="container container-business-img-1">
+                                <img class="business-img-1" src="assets/svgs/Unternehmen/address-img.svg" alt="Unternehmen"/>                                
+                            </div>
+                            <h3 class="text-uppercase">Adresse</h3>
+                            <p>Prüfe Chancen und Potenziale deiner Standorte. Was für eine Auswirkung haben die Adressen deiner Standorte (Filialen, Lagerhäuser etc.) auf potenzielle Kunden, deinen Erfolg, die Zufriedenheit und Gesundheit deiner Mitarbeiter und die Qualität deiner Produkte? Selbst offensichtlich gute Standorte können schlechte Zahlen haben.</p>
+                        </div>
+                        <!-- business-col-3 Mitarbeiter -->
+                        <div class="business-col col-12 col-sm-6 col-xl-4 mt-lg-5">
+                            <div class="container container-business-img-1">
+                                <img class="business-img-1" src="assets/svgs/Unternehmen/employees-img.svg" alt="Unternehmen"/>                                
+                            </div>
+                            <h3 class="text-uppercase">Mitarbeiter</h3>
+                            <p>Stress im Büro und nichts hilft? Austauschen können wir bei numscout deine Kollegen leider nicht. Aber wir können dir einen Tipp geben, wie du mit ihnen umgehen kannst und mit welchen Herausforderungen sie kämpfen.</p>
+                        </div>
+                        <!-- business-col-4 Team-->
+                        <div class="business-col col-12 col-sm-6 col-xl-4 mt-lg-5">
+                            <div class="container container-business-img-1">
+                                <img class="business-img-1" src="assets/svgs/Unternehmen/team-img.svg" alt="Unternehmen"/>                                
+                            </div>
+                            <h3 class="text-uppercase">Team</h3>
+                            <p>Team: Toll ein anderer macht's. So sollte ein Team nicht funktionieren. Ob dein Team seine Leistung bringen kann und wie es mit dem Harmonie- und Konfliktpotenzial aussieht, erfährst du hier.</p>
+                        </div>
+                        <!-- business-col-5 Produkte-->
+                        <div class="business-col col-12 col-sm-6 col-xl-4 mt-lg-5">
+                            <div class="container container-business-img-1">
+                                <img class="business-img-1" src="assets/svgs/Unternehmen/product-img.svg" alt="Unternehmen"/>                                
+                            </div>
+                            <h3 class="text-uppercase">Produkte</h3>
+                            <p>Sind deine Produkte leider ein Ladenhüter? Vielleicht liegt es am Produktenamen, am Slogan oder am Preis. Mit numscout findest du es einfach und schnell heraus.</p>
+                        </div>
+                        <!-- business-col-6-->
+                        <div class="business-col col-12 col-sm-6 col-xl-4 mt-lg-5">
+                            <div class="was-ist-noch-dabei">
+                                <h3 class="text-uppercase">WAS IST NOCH DABEI?</h3>
+                                <p>+ alle Berechnungsoptionen aus dem privaten Bereich!</p>
+                                <div class="d-flex flex-wrap justify-content-between align-items-center ">
+                                    <div class="container was-ist-noch-dabei-img-1">
+                                        <img class="business-img-1" src="assets/svgs/Unternehmen/personal-img.svg" alt="Unternehmen"/>                                
+                                    </div>
+                                    <div class="container was-ist-noch-dabei-img-1">
+                                        <img class="business-img-1" src="assets/svgs/Unternehmen/animals-img.svg" alt="Unternehmen"/>                                
+                                    </div>
+                                    <div class="container was-ist-noch-dabei-img-1">
+                                        <img class="business-img-1" src="assets/svgs/Unternehmen/number-plates-img.svg" alt="Unternehmen"/>                                
+                                    </div>
+                                    <div class="container was-ist-noch-dabei-img-1">
+                                        <img class="business-img-1" src="assets/svgs/Unternehmen/family-img.svg" alt="Unternehmen"/>                                
+                                    </div>
+                                    <div class="container was-ist-noch-dabei-img-1">
+                                        <img class="business-img-1" src="assets/svgs/Unternehmen/telephone-img.svg" alt="Unternehmen"/>                                
+                                    </div>
+                                </div>                                
+                                <a class="common-button">Für Private</a>
+                            </div>                           
+                        </div>
+                         
+                    </div>
+                </div>
+             </section>
+
+             <!-- Pricing Section -->
+              <section class="companies-pricing-section">
+                <div class="container">
+                    <h2 class="text-uppercase text-center pricing-h2">Preisgestaltung</h2>
+                    <div class="row row-cols-1 row-cols-md-2 gap-3 gap-md-0">
+                                <!-- Left Col -->
+                                 <div class="col align-items-center">
+                                    <div class="content">
+                                        <!-- content-head -->
+                                        <div class="content-head">
+                                            <div>
+                                                <h3 class="text-uppercase">Tester</h3>
+                                                <p>(1 TAG)*</p>
+                                            </div>
+                                            <hr>
+                                            <div class="price-tag">
+                                                <p>22.-CHF</p>
+                                            </div>
+                                        </div>
+                                         <!-- content-body -->
+                                          <div class="content-body">
+                                            <div>
+                                                <h4>Jetzt numscout und die Welt der Zahlen für dein Unternehmen testen. Optimiere Slogans und Produktenamen einfach und schnell mit numscout.</h4>
+                                                <ul>
+                                                    <li>24 Stunden lang uneingeschränkt profitieren.</li>
+                                                    <li>Alle Vorteile von numscout für dein Business kennenlernen.</li>
+                                                    <li>Alle Berechnungen bleiben in deinem Profil gespeichert.</li>
+                                                </ul>
+                                            </div>
+                                            <a class="common-button" href="#">jetzt registrieren</a>
+                                          </div>
+                                    </div>
+                                 </div>   
+
+                                <!-- right Col -->
+                                 <div class="col align-items-center">
+                                    <div class="content">
+                                        <!-- content-head -->
+                                        <div class="content-head">
+                                            <div>
+                                                <h3 class="text-uppercase">Einsteiger</h3>
+                                                <p>(1 Monat)*</p>
+                                            </div>
+                                            <hr>
+                                            <div class="price-tag">
+                                                <p>92.-CHF</p>
+                                            </div>
+                                        </div>
+                                         <!-- content-body -->
+                                          <div class="content-body">
+                                            <div>
+                                                <h4>Mehr für dein Business – Ob du einen neuen Kunden an Land ziehst oder deinen Internetauftritt neugestaltest, die Zahlen haben für jede Situation einen passenden Tipp bereit.</h4>
+                                                <ul>
+                                                    <li>Einen Monat alle Aspekte deines Business berechnen.</li>
+                                                    <li>Erhalte Inputs zu Kunden, Produktenamen und vielem mehr.</li>
+                                                    <li>All deine Berechnungen auf einen Blick.</li>
+                                                </ul>
+                                            </div>
+                                            <a class="common-button" href="#">jetzt registrieren</a>
+                                          </div>
+                                    </div>
+                                 </div>                                          
+                             </div>
+                         </div>
+                </div>
+              </section>
+             
+              <!-- slogan section -->
+              <section class="slogan-section">
+                <div class="container">
+                    <div class="row row-cols-1 row-cols-lg-2 flex-lg-row-reverse">
+                        <div class="col align-self-center">
+                            <div class="slogan-right">
+                                <h2>Die Geheimnisse derrichtigen Zahlen</h2>
+                                <h3>Kennst du deine Stärken?</h3>
+                                <p>
+                                    Überall in deinem Alltag wirst du durch deine Zahlen beeinflusst. Mit numscout lassen sich deine persönlichen Zahlen schnell und einfach berechnen. So erhältst du Einblicke und Anhaltspunkte, die dir helfen, schwierige Entscheidungen zu treffen und wichtige Chancen in deinem Leben zu nutzen.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="slogan-img-button">
+                                <button class="slogan-button" type="button" data-bs-toggle="modal" data-bs-target="#videoPrivatePopup">
+                                    <img class="img-button" src="assets/svgs/furprivate/geheimnisse-thumbnail-de.svg" />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </section>
+         </main>
+         <!-- Modal -->
+            <div class="modal fade" id="videoPrivatePopup" tabindex="-1" aria-labelledby="video-popup-modal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        <div class="video-frame-container">
+                            <iframe width="100%" height="500" src="https://www.youtube.com/embed/Jb2FhB-8LNQ?rel=0" frameborder="0" allowfullscreen=""></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+                     <!-- footer -->
+            <footer class="footer-section" id="footer">    
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-xl-6">
+                            <div class="numscout-container">
+                                <img src="assets/svgs/numscout-logo-footer.svg" />
+                                <p>Entdecke die Welt deiner Zahlen auf <strong>numscout.ch</strong> <br>und berechne dein Glück...</p>
+                                <div class="footer-social-links">
+                                    <a href="#" class="">
+                                        <img src="assets/svgs/facebook.svg" />
+                                    </a>
+                                    <a href="#" class="">
+                                        <img src="assets/svgs/x.svg" />
+                                    </a>
+                                    <a href="#" class="">
+                                        <img src="assets/svgs/linkedin.svg" />
+                                    </a>
+                                    <a href="#" class="">
+                                        <img src="assets/svgs/whatsapp.svg" />
+                                    </a>
+                                    <a href="#" class="">
+                                        <img src="assets/svgs/email.svg" />
+                                    </a>
+                                    <a href="#" class="">
+                                        <img src="assets/svgs/link.svg" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-xl-3">
+                            <div class="footer-quick-links">
+                                <h3>Quick Links</h3>
+                                <ul>
+                                    <li>Über uns</li>
+                                    <li>Für Unternehmen</li>
+                                    <li>Für Private</li>
+                                    <li>Blog</li>
+                                    <li>Kontakt</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class=" col-12 col-sm-6 col-xl-3">
+                            <div class="footer-address">
+                                <h3>ADRESSE</h3>
+                                <div class="location">
+                                    <img src="assets/svgs/address-pin.svg" />
+                                    <p>Neuhofstrasse 45 <br> CH-8315 Lindau</p>
+                                </div>
+                                <div class="contact-email">
+                                    <img src="assets/svgs/email.svg" />
+                                    <a href="#"  class="footer-email">info@numscout.ch</a>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="footer-hr"></hr>
+                    <div class="text-center text-xl-start d-flex flex-column flex-xl-row justify-content-between align-items-center">
+                        <small>
+                            © 2026 by numscouters gmbh | Konzept und Design by <span><a href="#footer"><img src="assets/svgs/loewenmut-logo.svg"/></a></span>
+                        </small>
+                        <small>
+                            Impressum | AGB | Datenschutz
+                        </small>
+                    </div>
+                </div>
+            </footer>
+                 <div class="modal fade" id="userCreds" tabindex="-1" aria-labelledby="user-creds" aria-hidden="true">
+            <!-- Modal dialog -->
+             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn modal-close" data-bs-dismiss="modal" aria-label="Close">
+                            <div class="close-button-icon-container">
+                                <i class="fa-solid fa-x"></i>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="modal-body w-100 user-creds">
+                        <!-- Container for navigation tabs -->                
+                       <div class="container">
+                            <!-- Navigation tabs -->
+                           <h1 id="modal-title" class="modal-title">Ich bin neu hier</h1>
+                           <ul class="nav nav-underline form-navigation justify-content-center align-items-center menu-navigation-tabs" role="tablist">
+                             <li class="nav-item">
+                               <a class="nav-link active btn" role="button" data-bs-toggle="tab" aria-current="page" href="#signup">Registrieren</a>
+                             </li>
+                             <li class="nav-item">
+                               <a class="nav-link btn" role="button"  data-bs-toggle="tab" href="#signin">Anmelden</a>
+                             </li>
+                           </ul>
+                           <!-- Tab content -->
+                           <div class="tab-content">
+                               <div class="tab-pane active" id="signup" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                                   <form class="modal-form">
+                                       <div class="row">
+                                           <div class="col-12">
+                                                 <input type="text" class="form-control form-control-lg" id="companyName" placeholder="Firma">
+                                           </div>
+                                           <div class="col-12">
+                                                   <select id="gender" class="mb-3" aria-label="Large select example">                                                       
+                                                       <option value="1">Männlich</option>
+                                                       <option value="2">Weiblich</option>
+                                                   </select>
+                                           </div>
+                                           <div class="col-12 col-sm-6">
+                                                   <input type="text" class="form-control form-control-lg" id="firstName" placeholder="Vorname">
+                                           </div>
+                                           <div class="col-12 col-sm-6">
+                                                   <input type="text" class="form-control form-control-lg" id="lastName" placeholder="Nachname">
+                                           </div>
+                                            <div class="col-12">
+                                                <input type="email" class="form-control form-control-lg" id="email" placeholder="E-mail">
+                                            </div>
+                                           <div class="col-12 col-sm-6 password-container">
+                                                <input type="password" class="form-control form-control-lg" id="password" placeholder="passwort*" />
+                                                <span id="showSignUpPassword" class="password-eye-icon"><i class="fa-solid fa-eye"></i></span>   
+                                                <span id="hideSignUpPassword" class="password-eye-icon"><i class="fa-solid fa-eye-slash"></i></span>   
+                                           </div>                                    
+                                           <div class="col-12 col-sm-6 password-container">
+                                                   <input type="password" class="form-control form-control-lg" id="confirmPassword" placeholder="Passwort wiederholen*" /> 
+                                                   <span id="showSignUpConfirmPassword" class="password-eye-icon"><i class="fa-solid fa-eye"></i></span>                                                                                        
+                                                   <span id="hideSignUpConfirmPassword" class="password-eye-icon"><i class="fa-solid fa-eye-slash"></i></span>                                                                                        
+                                           </div> 
+                                           <div class="col-12 terms-and-conditions">
+                                                <div class="d-flex justify-content-start align-items-start align-items-lg-center gap-2">
+                                                    <input class="form-check-input" type="checkbox" value="" id="tandC">
+                                                    <label class="form-check-label" for="tandC">
+                                                        Ich habe die
+                                                        <a href="#" >AGB</a>
+                                                           and
+                                                        <a href="#">Datenschutzbestimmungen</a>
+                                                        gelesen und stimme diesen zu.
+                                                    </label>
+                                                </div>
+
+                                           </div>  
+
+                                           <div class="col-12 subscribe">
+                                                <div class="d-flex justify-content-start align-items-start align-items-lg-center gap-2">
+                                                    <input class="form-check-input" type="checkbox" value="" id="subscribe">
+                                                    <label class="form-check-label" for="subscribe">
+                                                        Trage dich in unsere Abonnentenliste ein, um die neuesten Updates zu erhalten.
+                                                    </label>
+                                                </div>
+                                           </div>
+
+                                        </div>
+                                        <div class="col-12">
+                                           <input class="submit-button" type="submit"  value="REGISTRIEREN">
+                                        </div>
+                                       
+                                   </form>
+                               </div>
+                               <div class="tab-pane" id="signin" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                                   <form class="modal-form"> 
+                                       <div class="row">
+                                           <div class="col-12">
+                                               <input type="email" class="w-100 form form-control-lg" placeholder="E-mail" >
+                                           </div>
+                                           <div class="col-12 password-container">                                              
+                                               <input type="password" class="w-100 form form-control-lg" placeholder="Passwort">
+                                               <span id="showSigninPassword" class="password-eye-icon"><i class="fa-solid fa-eye"></i></span>
+                                               <span id="hideSigninPassword" class="password-eye-icon"><i class="fa-solid fa-eye-slash"></i></span>
+                                           </div>
+                                           <div class="col-12">
+                                               <input class="submit-button" type="submit" value="ANMELDEN">
+                                           </div>
+                                       </div>
+                                   </form>
+                               </div>
+                           </div>
+                        </div>
+
+                    </div>
+
+                    
+                </div>
+             </div>
+         </div>
+        <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>   
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>        
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0/dist/js/select2.min.js">
+        </script>
+        <script src="https://kit.fontawesome.com/1d80d6a305.js" crossorigin="anonymous"></script>
+        <script src="index.js"></script> 
+</body>
+</html>
