@@ -9,9 +9,10 @@
     --fs-37: 37px;
     --fs-32: 32px;
     --fs-28: 28px;
+    --fs-25: 25px;
     --fs-24: 24px;
-    --fs-20: 20px;
     --fs-22: 22px;
+    --fs-20: 20px;
     --fs-18: 18px;
     --fs-16: 16px;
     --fs-15: 15px;
@@ -31,6 +32,7 @@
     --lh-43: 43px;
     --lh-40: 40px;
     --lh-35: 35px;
+    --lh-31: 31px;
     --lh-33: 33px;
     --lh-29: 29px;
     --lh-27: 27px;
@@ -312,6 +314,97 @@ p{
     font-size: var(--fs-15);
     line-height: var(--fs-23);
 }
+
+.contact-form-section{
+    padding: var(--sectional-padding);
+    background: url("assets/svgs/kontakt-gradient.svg");
+    background-position: center top;
+    background-size: cover;
+}
+
+.contact-form input, .contact-form textarea{
+    background-color: transparent;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: var(--global-white) !important;
+    border: 0px;
+    border-radius: 0px;
+    border-bottom: 1px solid var(--global-white);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: var(--global-white);
+    opacity: 0.6;
+    font-size: var(--fs-15);
+    line-height: var(--lh-23);
+}
+
+.contact-col {
+        border: 1px solid rgb(255 255 255 / 43%);
+        background-color: rgb(255 255 255 / 30%);
+        border-radius: 20px;
+        padding: 18px;
+}
+
+.contact-col img{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.contact-col h2{
+        font-size: var(--fs-25);
+        line-height: var(--lh-31);
+        text-transform: none;
+}
+
+
+
+/* here address-email is the div containing both */
+
+.address-email{
+    padding: 1rem 0;
+}
+
+
+.address-email-row{
+    display: flex;
+    padding: 1rem 0;
+    justify-content: start;
+    align-items: start;    
+    gap: 1rem;
+    border-bottom: 1px solid var(--global-white);
+    font-size: var(--fs-16);
+    line-height: var(--lh-24);
+}
+
+.address-email-row:last-child{
+    align-items: center;
+}
+
+.address-email-row address{
+    color: var(--global-white);
+
+}
+
+.address-email-row a{
+    text-decoration: none;
+    color: var(--global-white);
+
+}
+
+.send-button-div{
+    padding: 2rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contact-form-section .section-heading{
+        font-size: var(--fs-25);
+        line-height: var(--lh-31);
+    }
 /* Animation keyframes */
 @keyframes spin {
 
@@ -362,6 +455,18 @@ p{
     font-size: var(-lh-21);
 }
 
+.send-button-div{
+    justify-content: flex-end; 
+    padding: 1rem 0;   
+}
+
+.contact-col {
+        border: 1px solid rgb(255 255 255 / 43%);
+        background-color: rgb(255 255 255 / 30%);
+        border-radius: 20px;
+        padding: 2rem;
+}
+
 }
 
 
@@ -380,6 +485,10 @@ p{
 }
 /* lg992 */
 @media (min-width: 992px){
+    .contact-col h2{
+        font-size: var(--fs-28);
+        line-height: var(--lh-35);
+    }
 
 }
 
@@ -429,7 +538,13 @@ p{
     }
 
     
-
+    .contact-form input::placeholder,
+    .contact-form textarea::placeholder {
+        color: var(--global-white);
+        opacity: 0.6;
+        font-size: var(--fs-18);
+        line-height: var(--lh-27);
+}
 
     .business-row > div:nth-child(3n+2)::before {
         content: '';
@@ -451,6 +566,15 @@ p{
         background: linear-gradient(to bottom, #ffffff00, #fff, #ffffff00);
     }
 
+    .contact-col h2{
+        font-size: var(--fs-32);
+        line-height: var(--lh-40);
+    }
+
+    .address-email-row{
+        font-size: var(--fs-20);
+        line-height: var(--lh-30);
+}
     /* Remove from last row's middle col */
 
 }
@@ -480,10 +604,10 @@ p{
     }
 
     .blog-section .blog-row .blog-links figure figcaption h4{
-    font-weight: var(--fw-600);
-    font-size: var(--fs-20);
-    line-height: var(--lh-24);
-}
+        font-weight: var(--fw-600);
+        font-size: var(--fs-20);
+        line-height: var(--lh-24);
+}    
 
 .blog-section .blog-row .blog-links  figure figcaption p{
     font-weight: var(--fw-300);
@@ -501,6 +625,13 @@ p{
     font-size: var(--fs-18);
     line-height: var(--fs-27);
 }
+
+    .contact-form-section .section-heading{
+        font-size: var(--fs-32);
+        line-height: var(--lh-40);
+    }
+
+
 
 
 }
