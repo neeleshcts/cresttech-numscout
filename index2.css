@@ -4,10 +4,12 @@
     --fs-78: 78px;
     --fs-60: 60px;
     --fs-55: 55px;
+    --fs-50: 50px;
     --fs-45: 45px;
     --fs-40: 40px;
     --fs-37: 37px;
     --fs-32: 32px;
+    --fs-30: 30px;
     --fs-28: 28px;
     --fs-25: 25px;
     --fs-24: 24px;
@@ -31,6 +33,8 @@
     --lh-50: 50px;
     --lh-43: 43px;
     --lh-40: 40px;
+    --lh-39: 39px;
+    --lh-36: 36px;
     --lh-35: 35px;
     --lh-31: 31px;
     --lh-33: 33px;
@@ -637,12 +641,25 @@ p{
 }
 /* xxl1600 */
 @media (min-width: 1600px){
-    
+    .business-section-heading>p{
+        font-size: var(--fs-22);
+        line-height: var(--lh-33);
+    }
+
+    .business-col p{
+        font-size: var(--fs-24);
+        line-height: var(--lh-36);
+    }
+
+    .slogan-right p{
+        font-size: var(--fs-25);
+        line-height: var(--fs-37);
+    }
+
     .business-img-1 p{
         line-height: var(--lh-33);
         font-size: var(--fs-22);
     }
-
 
 }
 

@@ -34,11 +34,8 @@
         <div class="container">
             <nav class="navbar navbar-expand-xl justify-content-between align-items-center">
                     <!-- logo -->
-                    <a class="navbar-brand" href="/">
-                        <span>
-                            <img class="" src="assets/svgs/numscout-logo-header.svg" />
-                        </span>
-                        
+                    <a class="navbar-brand" href="/">                
+                            <img class="" src="assets/svgs/numscout-logo-header.svg" />                        
                     </a>
                     <!-- Collapsible Navigation bar -->
                     <div id="navbarNav" class="collapse navbar-collapse">
@@ -52,10 +49,6 @@
                     <div id="offcanvasNavbar" class="offcanvas offcanvas-end numscout-offcanvas" tabindex="-1" data-bs-backdrop="static"  aria-labelledby="offcanvasNavBarLabel">                        
                         <!-- Navigation tabs -->
                          <div class="container">
-                             <button class="offcanvas-close-button" data-bs-dismiss="offcanvas" type="button" aria-label="Close">
-                                 <span class="offcanvas-header-button-icon">X</span>
-                             </button>
-    
                              <div class="offcanvas-body ">
                                  <div class="w-100 d-flex d-xl-none justify-content-start align-items-center">
                                      <div class="numscout-offcanvas-quick-links">
@@ -122,10 +115,10 @@
                             </ul>
                         </div>                    
                         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                                <div class="hamburger-icon">
-                                    <div class="hamburger-icon-strips"></div>
-                                    <div class="hamburger-icon-strips"></div>
-                                    <div class="hamburger-icon-strips"></div>
+                                <div class="hamburger-icon" id="hamburger">
+                                    <div class="hamburger-icon-strips strip-upper"></div>
+                                    <div class="hamburger-icon-strips strip-middle"></div>
+                                    <div class="hamburger-icon-strips strip-lower"></div>
                                 </div>
                         </button>
                     </div>
@@ -231,7 +224,7 @@
                                                     <li>Alle Berechnungen bleiben in deinem Profil gespeichert.</li>
                                                 </ul>
                                             </div>
-                                            <a class="common-button" href="#">jetzt registrieren</a>
+                                            <a class="common-button jetzt-button" href="#">jetzt registrieren</a>
                                           </div>
                                     </div>
                                  </div>   
@@ -267,7 +260,7 @@
                                                     <li>All deine Berechnungen auf einen Blick.</li>
                                                 </ul>
                                             </div>
-                                            <a class="common-button" href="#">jetzt registrieren</a>
+                                            <a class="common-button jetzt-button" href="#">jetzt registrieren</a>
                                           </div>
                                     </div>
                                  </div>                                          

@@ -104,6 +104,7 @@ document.querySelectorAll('.form-navigation .nav-link').forEach(function(tab) {
 
 // button closing the offcanvas
 const offcanvasEl = document.getElementById('offcanvasNavbar');
+const hamburger = document.getElementById('hamburger');
 
 document.querySelector('#offcanvasNavbar .btn-close').addEventListener('click', () => {
   bootstrap.Offcanvas.getInstance(offcanvasEl).hide();
@@ -114,3 +115,5 @@ document.querySelectorAll('#offcanvasNavbar .nav-item a').forEach(link => {
     bootstrap.Offcanvas.getInstance(offcanvasEl).hide();
   });
 });
+
+
