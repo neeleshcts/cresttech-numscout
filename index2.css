@@ -159,7 +159,10 @@ p{
 }
 
 .business-section{
-    background-color: #0B1541;
+    background: url("assets/business-bg-gradient-1.png") var(--gradient-bg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
     padding: var(--sectional-padding);
     text-align: center;
 }
@@ -228,6 +231,7 @@ p{
 .companies-pricing-section{
     padding: var(--sectional-padding);
     background: url('assets/bg-priese.svg');
+    background-size: cover;
 }
 
 .pricing-h2{
