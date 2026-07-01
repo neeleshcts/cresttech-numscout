@@ -116,4 +116,16 @@ document.querySelectorAll('#offcanvasNavbar .nav-item a').forEach(link => {
   });
 });
 
+let videoModal = document.getElementById('videoPrivatePopup'); // the modal ID
+let videoFrame = document.getElementById('videoFrame'); // the iframe ID
+let videoSrc; // to store the original src
+
+videoModal.addEventListener('show.bs.modal', function () {
+  videoSrc = videoFrame.getAttribute('data-src'); // store real URL in data-src on the iframe tag
+  videoFrame.setAttribute('src', videoSrc);
+});
+
+videoModal.addEventListener('hide.bs.modal', function () {
+  videoFrame.setAttribute('src', '');
+});
 

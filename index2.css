@@ -326,6 +326,15 @@ p{
     background-size: cover;
 }
 
+
+
+.contact-form-section .form-control {
+    background-color: transparent !important;
+}
+.contact-form-section .form-control:focus {
+    background-color: transparent !important;
+}
+
 .contact-form input, .contact-form textarea{
     background-color: transparent;
     margin-top: 1rem;
@@ -336,7 +345,23 @@ p{
     border-bottom: 1px solid var(--global-white);
 }
 
-.contact-form input, .contact-form textarea:focus{
+.contact-form input:-webkit-autofill,
+.contact-form input:-webkit-autofill:hover, 
+.contact-form input:-webkit-autofill:focus, 
+.contact-form input:-webkit-autofill:active{
+    /* -webkit-background-clip: text; */
+    -webkit-text-fill-color: #ffffff;
+    background-color: #0a1045;
+    transition: background-color 5000s ease-in-out 0s;
+    box-shadow: inset 0 0 20px 20px #23232329;
+    border: none;
+    border-bottom: 1px solid #ffffff !important;
+}
+
+.contact-form input:focus, .contact-form textarea:focus{
+    background-color: transparent !important;
+}
+.contact-form input:hover, .contact-form textarea:hover{
     background-color: transparent !important;
 }
 
@@ -367,6 +392,14 @@ p{
         text-transform: none;
 }
 
+.arrow-div span{
+    font-size: var(--fs-16);
+    line-height: var(--lh-24);
+}
+
+.arrow-div img{
+    max-width: 25%;
+}
 
 
 /* here address-email is the div containing both */
@@ -413,6 +446,22 @@ p{
         font-size: var(--fs-25);
         line-height: var(--lh-31);
     }
+
+.slogan-section .modal-content{
+    background: none;
+    border: 0px;    
+}
+
+.slogan-section .modal-body .btn-close{
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    opacity: 1;    
+}    
 /* Animation keyframes */
 @keyframes spin {
 
@@ -489,6 +538,11 @@ p{
         font-size: var(--fs-16);
         line-height: var(--lh-24);
     }
+
+    .arrow-div span{
+        font-size: var(--fs-14);
+        line-height: var(--lh-21);
+}
 
 }
 /* lg992 */
@@ -615,7 +669,7 @@ p{
         font-weight: var(--fw-600);
         font-size: var(--fs-20);
         line-height: var(--lh-24);
-}    
+    }    
 
 .blog-section .blog-row .blog-links  figure figcaption p{
     font-weight: var(--fw-300);
@@ -639,7 +693,10 @@ p{
         line-height: var(--lh-40);
     }
 
-
+    .arrow-div span{
+        font-size: var(--fs-20);
+        line-height: var(--lh-30);
+    }
 
 
 }
