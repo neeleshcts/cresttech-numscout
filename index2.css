@@ -336,6 +336,10 @@ p{
     border-bottom: 1px solid var(--global-white);
 }
 
+.contact-form input, .contact-form textarea:focus{
+    background-color: transparent !important;
+}
+
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
     color: var(--global-white);
