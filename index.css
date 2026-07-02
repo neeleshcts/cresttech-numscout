@@ -973,6 +973,10 @@ img{
     cursor: pointer;
     padding: 2px 0;
 }
+.footer-quick-links ul li a{
+    text-decoration: none;
+    color: #fff;
+}
 
 .footer-quick-links ul li,.footer-address div p, .footer-address div a{
         font-family: var(--work-sans);
