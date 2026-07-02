@@ -193,6 +193,7 @@ img{
     line-height: var(--lh-23);
     padding: 1rem 3rem;
     height: auto;
+    border: 2px solid #fff;
 }
 
 .common-button:hover{

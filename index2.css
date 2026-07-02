@@ -335,6 +335,10 @@ p{
     background-color: transparent !important;
 }
 
+.contact-form-section .form-control.error{
+    border-bottom: 1px solid red;
+}
+
 .contact-form input, .contact-form textarea{
     background-color: transparent;
     margin-top: 1rem;
