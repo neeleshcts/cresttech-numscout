@@ -326,7 +326,9 @@ p{
     background-size: cover;
 }
 
-
+.about-section-para-content p{
+    font-size: var(--fs-18);
+}
 
 .contact-form-section .form-control {
     background-color: transparent !important;
@@ -466,6 +468,104 @@ p{
     border-radius: 50px;
     opacity: 1;    
 }    
+
+.section-uber-static{
+    padding: var(--sectional-padding);
+    background: var(--background-gradient);
+}
+
+.accordion-button {
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+.accordion-heading{
+    font-size: var(--fs-24);
+    font-weight: var(--fw-700);
+
+}
+
+.accordion-button::after{                
+    background: url('assets/svgs/uber-uns/plus.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 40px;
+
+}
+
+.accordion-button:not(.collapsed)::after{
+    background: url('assets/svgs/uber-uns/minus.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+        height: 40px;
+    width: 40px;
+}
+
+.accordion-list-numscout li a{
+    color: #ffffff;
+}
+
+
+
+
+.button-icon-container .vertical{
+    width: 1px;
+    height: 100%;
+    background-color: #000000;
+}
+
+.button-icon-container .horizontal{
+    height: 1px;
+    width: 100%;
+    background-color: #000000;
+}
+
+
+
+.numscout-accordion{
+    margin-top: 4rem;
+}
+
+.accordion-item{
+    background: transparent;
+    border: 0px;
+}
+
+.accordion-button:not(.collapsed){
+    background-color: transparent;   
+    box-shadow: none;
+}
+
+.accordion-button{
+    background: transparent;
+    border: 3px solid white;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+}
+
+.accordion-button:focus{
+    box-shadow: none;
+}
+
+.accordion-item:first-of-type>.accordion-header .accordion-button{
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+.uber-uns-button-container{
+    display: flex;
+    justify-content: flex-start;    
+    gap: 2rem;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+
+
 /* Animation keyframes */
 @keyframes spin {
 
@@ -528,6 +628,10 @@ p{
         padding: 2rem;
 }
 
+.about-section-para-content p{
+    font-size: var(--fs-22);
+}
+
 }
 
 
@@ -554,6 +658,11 @@ p{
     .contact-col h2{
         font-size: var(--fs-28);
         line-height: var(--lh-35);
+    }
+
+    .uber-uns-button-container{
+        flex-direction: row;
+        margin-bottom: 0;        
     }
 
 }
@@ -702,6 +811,16 @@ p{
         line-height: var(--lh-30);
     }
 
+    .accordion-body p{
+        font-size: var(--fs-20);
+        line-height: var(--lh-30);
+        font-weight: var(--fw-400);
+    }
+
+    .accordion-list-numscout li a {        
+        font-size: var(--fs-20);
+        font-weight: var(--lh-30);
+    }
 
 }
 /* xxl1600 */
