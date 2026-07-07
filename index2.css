@@ -485,7 +485,7 @@ p{
 
 }
 
-.accordion-button::after{                
+.accordion-button::after,.accordion-button.collapsed::after{                
     background: url('assets/svgs/uber-uns/plus.svg');
     background-size: contain;
     background-repeat: no-repeat;

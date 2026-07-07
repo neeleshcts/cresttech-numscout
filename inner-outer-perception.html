@@ -19,7 +19,6 @@
     <link rel="manifest" href="assets/numscout-favs//manifest.json">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0/dist/css/select2.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="index2.css" />
     <link rel="stylesheet" href="index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,15 +27,16 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="assets/numscout-favs//ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <title>numscout-Unternehmen</title>
+    
 </head>
 <body>
-        <header class="numscout-header">
+<!-- header -->
+    <header class="numscout-header">
         <div class="container">
             <nav class="navbar navbar-expand-xl justify-content-between align-items-center">
                     <!-- logo -->
-                    <a class="navbar-brand" href="/">                        
-                            <img class="" src="assets/svgs/numscout-logo-header.svg" />                                                
+                    <a class="navbar-brand" href="/">                
+                            <img class="" src="assets/svgs/numscout-logo-header.svg" />                        
                     </a>
                     <!-- Collapsible Navigation bar -->
                     <div id="navbarNav" class="collapse navbar-collapse">
@@ -49,27 +49,27 @@
                       
                     <div id="offcanvasNavbar" class="offcanvas offcanvas-end numscout-offcanvas" tabindex="-1" data-bs-backdrop="static"  aria-labelledby="offcanvasNavBarLabel">                        
                         <!-- Navigation tabs -->
-                         <div class="container">  
+                         <div class="container">
                              <div class="offcanvas-body ">
                                  <div class="w-100 d-flex d-xl-none justify-content-start align-items-center">
                                      <div class="numscout-offcanvas-quick-links">
                                          <ul class="navbar-nav align-items-start gap-3">
-                                             <li class="nav-item"><a class="nav-link active" href="companies.html">| Für Unternehmen </a></li>                                  
+                                             <li class="nav-item"><a class="nav-link" href="companies.html">| Für Unternehmen </a></li>                                  
                                              <li class="nav-item"><a class="nav-link" href="private.html">| Für Private </a></li>                                     
                                              <li class="nav-item"><a class="nav-link" href="blog.html">| Blog</a></li>
                                              <li class="nav-item d-xl-none"><a class="nav-link" href="contact.html">| Kontakt</a></li>
                                          </ul>
                                      </div>                                                                               
                                  </div>
+                                 <!-- offcanvas footer is not available in bootstrap  -->
+                                 <div class="offcanvas-footer">
+                                    <small>© 2026 by numscouters gmbh </small>
+                                    <br>
+                                    <small>
+                                        Impressum | AGB | Datenschutz
+                                    </small>
+                                 </div>
                              </div> 
-                             <!-- offcanvas footer is not available in bootstrap  -->
-                             <div class="offcanvas-footer">
-                                <small>© 2026 by numscouters gmbh </small>
-                                <br>
-                                <small>
-                                    Impressum | AGB | Datenschutz
-                                </small>
-                             </div>
                          </div>
                          
                         </div> 
@@ -85,7 +85,7 @@
                                     </li>        
                                     <li class="nav-item">|</li>
                                      <li class="nav-item">
-                                        <a href="blog.html" >Blog</a>
+                                        <a href="contact.html" >Blog</a>
                                     </li>                                     
                                  </ul>
                              </div>                                                                               
@@ -111,185 +111,30 @@
                                     </button>                                    
                                 </li>
                                 <li class="d-none d-xl-block kontakt">
-                                    <a class="" href="contact.html">Kontakt</a>
+                                    <a class="common-button" href="contact.html">Kontakt</a>
                                 </li>
                             </ul>
                         </div>                    
                         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                                <div class="hamburger-icon">
-                                    <div class="hamburger-icon-strips"></div>
-                                    <div class="hamburger-icon-strips"></div>
-                                    <div class="hamburger-icon-strips"></div>
+                                <div class="hamburger-icon" id="hamburger">
+                                    <div class="hamburger-icon-strips strip-upper"></div>
+                                    <div class="hamburger-icon-strips strip-middle"></div>
+                                    <div class="hamburger-icon-strips strip-lower"></div>
                                 </div>
                         </button>
                     </div>
                 
                     <!-- Collapsible buttons -->    
                 </nav>            
-            </div>
+
+        </div>
         </header>
+
         <!-- main -->
          <main>
-            <!-- banner section -->
-             <section class="companies-hero-section">
-                 <div class="container">
-                     <div class="row row-cols-1 row-cols-md-2">
-                         <div class="col align-self-center">
-                             <h1 class="text-uppercase">Willkommen in der Welt derZahlen</h1>
-                             <p>Wir von numscout wissen, hinter den richtigen Zahlen steht dein Erfolg.</p>
-                         </div>
-                         <div class="col align-self-center image-col">
-                             <div class="hero-image-container">
-                             <img class="companies-hero-image w-100" src="assets/header-img-uber-uns.png" />                          
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-             </section>
-
-            <!-- business section -->
-                     <section class="about-section">
-            <div class="container">
-                <span class="subtitle">Über numscout</span>
-                <div class="row">
-                    <div class="col-12">
-                        <h2 class="text-uppercase">Wir sind Zahlen-Profis,<br>
-                             und du?
-                        
-                        </h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div>
-                            <img src="assets/home-uber.png" />
-                        </div>
-                    </div>
-                </div>
-                <div class="row row-cols-1 row-cols-lg-2 about-section-para-content">
-                    <div class="col">
-                        <p>Von deiner Wirkung nach aussen, über deinen Lebensweg bis hin zur Lebenszahl. Die Aussagekraft der Zahlen ist unglaublich vielfältig und bietet Anhaltspunkte zu jeder Situation im Leben.</p>
-                    </div>
-                    <div class="col">
-                        <p>Aber wie kommen sie zustande? Welche Zahlen können berechnet werden? Und wie kann man sie zu seinem Vorteil nutzen? Mit numscout erschließt sich die ganze Welt der Zahlen schnell und mühelos.</p>                        
-                    </div>
-                </div>
-            </div>
-          </section>
-
-          <section class="section-uber-static">
-                    <div class="container">
-                        <div class="row row-cols-1 row-cols-lg-2 flex-lg-row-reverse">
-                            <div class="col align-self-center">
-                                <div class="uber-left">
-                                    <h2 class="mb-3">Du, deine Zahlen <br> und die Welt</h2>                                
-                                    <p>
-                                        Die Zahlen folgen dir auf Schritt und Tritt. Ob privat oder beruflich, ob bei grossen Projekten oder in deiner Beziehung. Die Zahlen haben auf jede Situation im Leben eine Antwort. Die meisten jedoch ignorieren ihre Bedeutung und lassen sich dadurch jede Menge Chancen im Leben entgehen.
-                                    </p>
-                                    <p>
-                                        Mit numscout kannst du diese Chancen nutzen. Schnell und einfach berechnest du eine Vielzahl von Informationen und erhältst umgehend nützliche. Informationen, die du in deinem Alltag gewinnbringend einsetzen kannst.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="uber-img-button">
-                                    <div class="slogan-button" type="button" data-bs-toggle="modal" data-bs-target="#videoPrivatePopup">
-                                        <img class="img-button" src="assets/image-uber-uns-1.png" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="numscout-accordion row row-cols-1 row-cols-lg-2 flex-lg-row">
-                            <div class="col align-self-start">
-                                <div class="uber-left">
-                                    <div class="accordion" id="accordion-links">
-                                        <div class="accordion-item">
-                                            <div class="accordion-header">
-                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                    <div class="button-icon-container"> 
-                                                        <h4 class="accordion-heading">
-                                                            Wie numscout Zahlen berechnet
-                                                        </h4>
-                                                                                                               
-                                                    </div>
-                                                </button>
-                                            </div>
-
-                                            <div class="accordion-collapse collapse show" id="collapseOne" data-bs-parent="accordion">
-                                                <div class="accordion-body">
-                                                    <p>
-                                                        Grundlage für unsere Berechnungen sind zum einen das Geburtsdatum eines Menschen, zum anderen aber auch sein Vor- und Nachname. Es lassen sich jedoch auch Berechnungen aus Firmennamen, Slogans oder anderen Kombinationen aus Zahlen und Buchstaben rechnen. Auch der Name deines Haustiers lässt sich berechnen, du brauchst ihn nur in unseren Rechner einzugeben.
-                                                    </p>
-    
-                                                    <p>
-                                                        Ist ein Name erst einmal eingegeben, errechnet numscout im Handumdrehen die dazu gehörigen Zahlen und erklärt dir ausführlich ihre Bedeutung.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="accordion-item">
-                                            <div class="accordion-header">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="true" aria-controls="collapsetwo">
-                                                    <div class="button-icon-container"> 
-                                                        <h4 class="accordion-heading">
-                                                            Was sich mit numscout alles berechnen lässt
-                                                        </h4>
-                                                                                                          
-                                                    </div>
-                                                </button>
-                                            </div>
-
-                                            <div class="accordion-collapse collapse" id="collapsetwo" data-bs-parent="accordion">
-                                                <div class="accordion-body">
-                                                    <p>
-Die Fülle an Informationen, welche die Zahlen bieten, ist unglaublich vielfältig. Deshalb haben wir dir hier eine kleine Übersicht erstellt, was sich mit numscout alles berechnen lässt. In unserem spannenden und lehrreichen Blog findest du zudem eine ganze Menge an zusätzlichen Informationen und Beispielen.
-                                                    </p>
-    
-                                                    <p>
-                                                        Ist ein Name erst einmal eingegeben, errechnet numscout im Handumdrehen die dazu gehörigen Zahlen und erklärt dir ausführlich ihre Bedeutung.
-                                                    </p>
-
-                                                    <p>
-                                                        <strong>Links zu den entsprechenden Blogposts:</strong>                                                        
-                                                    </p>
-                                                    <ul class="accordion-list-numscout">
-                                                        <li><a href="#">Lebensweg</a></li>
-                                                        <li><a href="#">Geburtzahl</a></li>
-                                                        <li><a href="#">Innere und äussere Wahrnehmung</a></li>
-                                                        <li><a href="#">Ausgleichszahl</a></li>
-                                                        <li><a href="#">Glücks- und Krafttage</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-
-                        <div class="uber-uns-button-container">
-                            <a href="#" class="common-button">Für Private</a>
-                            <a href="#" class="common-button">Für Unternehmen</a>
-                        </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="uber-img-button">
-                                    <button class="slogan-button" type="button" data-bs-toggle="modal" data-bs-target="#videoPrivatePopup">
-                                        <img class="img-button" src="assets/image-uber-uns-2.png" />
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-          </section>
-
-
             
          </main>
-                     <!-- footer -->
+            <!-- footer -->
             <footer class="footer-section" id="footer">    
                 <div class="container">
                     <div class="row">
@@ -340,7 +185,7 @@ Die Fülle an Informationen, welche die Zahlen bieten, ist unglaublich vielfält
                                 </div>
                                 <div class="contact-email">
                                     <img src="assets/svgs/email.svg" />
-                                    <a href="mailto:info@numscout.ch"  class="footer-email">info@numscout.ch</a>
+                                    <a href="mailto:info@numscout.ch" class="footer-email">info@numscout.ch</a>
                                 </div>                                
                             </div>
                         </div>
@@ -356,18 +201,15 @@ Die Fülle an Informationen, welche die Zahlen bieten, ist unglaublich vielfält
                     </div>
                 </div>
             </footer>
-                 <div class="modal fade" id="userCreds" tabindex="-1" aria-labelledby="user-creds" aria-hidden="true">
+            <!-- Modal -->
+         <div class="modal fade" id="userCreds" tabindex="-1" aria-labelledby="user-creds" aria-hidden="true">
             <!-- Modal dialog -->
              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="btn modal-close" data-bs-dismiss="modal" aria-label="Close">
-                            <div class="close-button-icon-container">
-                                <i class="fa-solid fa-x"></i>
-                            </div>
-                        </button>
-                    </div>
+                <div class="modal-content ">
                     <div class="modal-body w-100 user-creds">
+                        <button class="reg-close" data-bs-dismiss="modal" aria-label="Close">
+                                X
+                        </button>
                         <!-- Container for navigation tabs -->                
                        <div class="container">
                             <!-- Navigation tabs -->
@@ -469,11 +311,11 @@ Die Fülle an Informationen, welche die Zahlen bieten, ist unglaublich vielfält
                 </div>
              </div>
          </div>
-        <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>   
+         <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>   
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>        
         <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0/dist/js/select2.min.js">
         </script>
         <script src="https://kit.fontawesome.com/1d80d6a305.js" crossorigin="anonymous"></script>
         <script src="index.js"></script> 
-</body>
+    </body>
 </html>
