@@ -23,6 +23,7 @@
 /* font weight */
     --fw-700: 700;
     --fw-600: 600;
+    --fw-500: 500;
     --fw-400: 400;
     --fw-300: 300;
 
@@ -31,11 +32,14 @@
     --lh-63: 63px;
     --lh-52: 52px;
     --lh-50: 50px;
+    --lh-46: 46px;
     --lh-43: 43px;
     --lh-40: 40px;
     --lh-39: 39px;
+    --lh-37: 37px;
     --lh-36: 36px;
     --lh-35: 35px;
+    --lh-31: 32px;
     --lh-31: 31px;
     --lh-33: 33px;
     --lh-29: 29px;
@@ -44,6 +48,7 @@
     --lh-23: 23px;    
     --lh-22: 22px;    
     --lh-21: 21px;
+    --lh-18: 18px;
     --lh-17: 17px;
 
 /* font family */
@@ -485,7 +490,7 @@ p{
 
 }
 
-.accordion-button::after,.accordion-button.collapsed::after{                
+.accordion-button::after{                
     background: url('assets/svgs/uber-uns/plus.svg');
     background-size: contain;
     background-repeat: no-repeat;
@@ -563,8 +568,85 @@ p{
     margin-bottom: 2rem;
 }
 
+.blog-on-page-section{
+    padding: var(--sectional-padding);
+    background: var(--background-gradient);
+}
+
+.breadcrumb-item a{
+    text-decoration: none;
+    color: var(--global-white); 
+}
+
+.blog-icon{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.breadcrumb-item {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb-item span{
+    font-size: var(--fs-15);
+    line-height: var(--lh-15);
+}
+
+.breadcrumb-item+.breadcrumb-item::before{
+    color: var(--global-white);
+    font-size: larger;    
+}
 
 
+.post-container .post-title{
+    font-size: var(--fs-28);
+    line-height: var(--lh-32);    
+}
+.post-container .post-desc{
+    font-size: var(--fs-18);
+    line-height: var(--lh-27);
+    font-weight: var(--fw-400);
+}
+
+.blog-post-img{
+    margin-bottom: 1rem;
+}
+
+.blog-post-break{    
+    opacity: .25;
+    border: 1px solid var(--global-white);
+}
+.year-title{
+    font-size: var(--fs-20);
+    line-height: var(--lh-24);
+    font-weight: var(--fw-600);
+}
+
+.year-desc{
+    font-size: var(--fs-18);
+    line-height: var(--lh-27);
+    font-weight: var(--fw-400);
+}
+
+.post-note-share{
+    padding: 1.5rem;
+    background-color: rgb(255 255 255 / 30%);
+    border-radius: 20px;
+    border: 1px solid rgb(255 255 255 / 43%);
+}
+
+.post-note-share em{
+    color: var(--global-white);
+    font-size: var(--fs-20);
+    line-height: var(--lh-24);
+    font-weight: var(--fw-500);
+    margin-bottom: 2rem;
+}
+
+
+/* general-css-end */
 
 /* Animation keyframes */
 @keyframes spin {
@@ -651,7 +733,20 @@ p{
         font-size: var(--fs-14);
         line-height: var(--lh-21);
 }
+    .post-container .post-desc{
+        font-size: var(--fs-14);
+        line-height: var(--lh-21);
+    }
 
+.year-desc{
+    font-size: var(--fs-16);
+    line-height: var(--lh-24);
+    font-weight: var(--fw-400);
+}
+    .post-note-share em{
+        font-size: var(--fs-18);
+        line-height: var(--lh-24);
+    }
 }
 /* lg992 */
 @media (min-width: 992px){
@@ -702,6 +797,16 @@ p{
     font-weight: var(-fw-600);
     font-size: var(-fs-16);
     font-size: var(-lh-24);
+}
+
+.post-container .post-title{
+    font-size: var(--fs-32);
+    line-height: var(--lh-37);    
+}
+
+.post-container .post-desc{
+    font-size: var(--fs-16);
+    line-height: var(--lh-24);
 }
 
 }
@@ -822,6 +927,51 @@ p{
         font-weight: var(--lh-30);
     }
 
+    .nav--breadcrumb{
+        margin-bottom: 4rem;
+    }
+
+    ol.breadcrumb{
+        width: fit-content;
+        background-color: #ffffff20;
+        padding: 9px;
+        border-radius: 50px;
+    }
+
+    .breadcrumb-item span{
+        font-size: var(--fs-18);
+        line-height: var(--lh-18);
+    }
+       
+    .post-container .post-title{
+        font-size: var(--fs-40);
+        line-height: var(--lh-46);         
+    }
+    .post-container .post-desc{
+        font-size: var(--fs-20);
+        line-height: var(--lh-30);         
+    }
+
+    .year-title{
+    font-size: var(--fs-20);
+    line-height: var(--lh-24);
+    font-weight: var(--fw-600);
+}
+
+.year-title{
+    font-size: var(--fs-24);
+    line-height: var(--lh-29);
+}
+
+.year-desc{
+    font-size: var(--fs-20);
+    line-height: var(--lh-30);    
+}
+
+.post-note-share em{
+    font-size: var(--fs-24);
+    line-height: var(--lh-29);
+}
 }
 /* xxl1600 */
 @media (min-width: 1600px){
