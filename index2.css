@@ -785,6 +785,12 @@ p.tennis-profi{
     margin-top: -0.2rem;
 }
 
+.blog-page-main-content-div h3{
+    font-size: var(--fs-24);
+    line-height: var(--lh-29);
+    font-weight: var(--fw-600);
+}
+
 
 /* general-css-end */
 
