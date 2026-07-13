@@ -755,14 +755,15 @@ p{
     }
 }
 
-.seo-ol{
+ul.blog-page-main-content {
     list-style: none;
     padding: 0;
 }
 
-.seo-ol li{
+.blog-page-main-content li,.blog-page-main-content p{
     font-size: var(--fs-20);
     line-height: var(--lh-30);
+    font-weight: var(--fw-400);
     margin-top: 2rem;
 }
 
@@ -1152,9 +1153,9 @@ p{
     }
 
 }
-    .seo-old li{
+    .blog-page-main-content li,.blog-page-main-content p{
         font-size: var(--fs-18);
-        line-height: var(--lh-27);
+        line-height: var(--lh-27);        
     }
 }
 /* css end */
