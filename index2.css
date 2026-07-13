@@ -791,6 +791,11 @@ p.tennis-profi{
     font-weight: var(--fw-600);
 }
 
+.blog-page-main-content.live-fast{
+    margin-top: -1.5rem;
+    margin-bottom: 2rem;
+}
+
 
 /* general-css-end */
 
