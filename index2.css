@@ -767,6 +767,19 @@ ul.blog-page-main-content {
     margin-top: 2rem;
 }
 
+.blog-page-main-content p{
+    margin-top: -.15rem;
+}
+
+p.auffallend{
+    font-size: var(--fs-24);
+    line-height: var(--lh-30);
+    font-weight: var(--fw-700);
+}
+
+p.tennis-profi{
+    margin-top: -0.2rem;
+}
 
 
 /* general-css-end */
@@ -1072,7 +1085,8 @@ ul.blog-page-main-content {
     }
     .blog-on-page-section .post-desc{
         font-size: var(--fs-20) ;
-        line-height: var(--lh-30);         
+        line-height: var(--lh-30);
+        font-weight: var(--fw-400);
     }
 
     .year-title{
