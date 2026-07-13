@@ -571,6 +571,10 @@ p{
     margin-bottom: 2rem;
 }
 
+.blog-on-page-section .post-title{
+    text-transform: uppercase;
+}
+
 .blog-on-page-section{
     padding: var(--sectional-padding);
     background: var(--background-gradient);
@@ -750,6 +754,18 @@ p{
         height: 100%;
     }
 }
+
+.seo-ol{
+    list-style: none;
+    padding: 0;
+}
+
+.seo-ol li{
+    font-size: var(--fs-20);
+    line-height: var(--lh-30);
+    margin-top: 2rem;
+}
+
 
 
 /* general-css-end */
@@ -1136,6 +1152,10 @@ p{
     }
 
 }
+    .seo-old li{
+        font-size: var(--fs-18);
+        line-height: var(--lh-27);
+    }
 }
 /* css end */
 @media (min-width: 576px) and (max-width: 1199px){
