@@ -670,6 +670,18 @@ img{
 }
 .pricing-section .container > ul li a{    
     font-weight: 600;
+    position: relative;
+}
+
+.pricing-section .container > ul li a::after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--white);
+            opacity: 30%;
 }
 
 .pricing-section .nav-pills .nav-link.active, .pricing-section .nav-pills .show>.nav-link{
@@ -684,6 +696,7 @@ img{
     font-weight: bold;
     font-family: var(--work-sans);
     border-bottom: 2px solid grey;
+    width: fit-content;
 }
 
 
@@ -1044,7 +1057,7 @@ img{
 
 /* Sign in signup */
 .user-creds{
-    background: url("assets/svgs/registration-bg.svg");
+    background: url("assets/svgs/registration-bg.svg") var(--gradient-bg);
     padding: 24px;
 }
 
@@ -1081,6 +1094,8 @@ img{
 
 .modal-form input::placeholder{
     color: #fff;
+    font-size: var(--fs-18);
+    line-height: var(--lh-27);
 }
 
 .modal-form .submit-button{
@@ -1340,6 +1355,14 @@ img{
     border-color:unset !important;
 }
 
+.modal-form {
+    .subscribe{
+        label {
+            margin-top: 1rem;
+        }
+    }
+}
+
 /* fa-customization */
 
 .svg-inline--fa {
@@ -1427,11 +1450,9 @@ img{
     border-bottom-right-radius: 0;
 }
  
-.pricing-section .nav-link:hover{
-    color: grey !important;
+.pricing-section .nav-link:hover{    
     border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    border-bottom: 2px solid grey !important;
+    border-bottom-right-radius: 0;    
 }
 
 /* ===========================
@@ -1983,6 +2004,11 @@ img{
         line-height: var(--fs-30);
     }
 
+    
+        .modal-title{
+            font-size: var(--fs-28);
+            line-height: var(--lh-34);
+        }
 
 }
 
@@ -2190,6 +2216,7 @@ img{
         .footer-quick-links ul li,.footer-address div p, .footer-address div a{
             font-size: 22px;
         } */
+
 }
 
 
