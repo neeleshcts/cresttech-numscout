@@ -186,6 +186,10 @@ p{
     max-width: 1000px;
     margin: 0 auto;
 }
+.business-section-heading p{
+    font-size: var(--fs-22);
+    line-height: var(--lh-33);
+}
 
 .container-business-img-1,.was-ist-noch-dabei-img-1{
     position: relative;
@@ -915,6 +919,15 @@ ul.agb-datenschutz li a{
     }
 }
 
+    .business-row  .business-col{
+        padding-top: 1rem;
+    }
+
+    .business-col p{
+        font-size: var(--fs-18);
+        line-height: var(--lh-24);
+    }
+
 /* general-css-end */
 
 /* Animation keyframes */
@@ -941,9 +954,7 @@ ul.agb-datenschutz li a{
 /* Media queries */
 /* xs0 */
 @media (min-width: 0px){
-    .business-row  .business-col{
-        padding-top: 1rem;
-    }
+
 
   
 }
@@ -1357,6 +1368,11 @@ ul.agb-datenschutz li p{
         font-size: var(--fs-16);
         line-height: var(--lh-24);        
     }
+
+    .business-section-heading p{
+    font-size: var(--fs-18);
+    line-height: var(--lh-27);
+}
 
 }
 /* css end */
