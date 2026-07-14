@@ -1066,6 +1066,11 @@ img{
     border-bottom: 2px solid grey;
 }
 
+.form-navigation li:has(a.nav-link.active){
+    border-bottom: 2px solid var(--global-white);
+}
+
+
 
 .form-navigation li a {
 
@@ -1135,6 +1140,9 @@ img{
     background-color: #fff;
     width: 50px;
     height:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .close-button-icon-container{
@@ -1196,7 +1204,7 @@ img{
 /* Trigger box background */
 
 .select2-selection__rendered{
-    padding: 0px 16px !important;
+    padding: 5px 16px !important;
     border-radius: 0.5rem;
 }
 
@@ -1222,7 +1230,7 @@ img{
 .select2-container .select2-selection--multiple {
     background-color: transparent !important;
     border: 1px solid #ced4da;
-    min-height: 42px !important;
+    min-height: 48px !important;
     border-radius: 0.375rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -1430,13 +1438,13 @@ img{
 
 .nav-link.active:hover{
     color: var(--global-white) !important;
-    border-bottom: 2px solid white !important;
+    /* border-bottom: 2px solid white !important; */
 }
  
- .nav-link:hover{
+ /* .nav-link:hover{
     color: grey !important;
     border-bottom: 2px solid grey !important;
-}
+} */
 
 
 .pricing-section .nav-link{
@@ -1575,6 +1583,15 @@ img{
     }
 }
 
+ul.nav.nav-underline{
+    li.nav-item{
+        padding: 0.5rem 0;
+    }
+}
+
+.nav-underline .nav-link{
+    border-bottom: 0px;
+}
 
 /* mix-blend-mode: color-dodge */
 
@@ -1767,15 +1784,15 @@ img{
     }
 
     .modal-header button{
-        width: 36px;
-        height: 36px;        
+        width: 30px;
+        height: 30px;        
     }    
 
 }
 
 
 /* Smaller breakpoints */
-@media (max-width: 576px){
+@media (max-width: 575px){
     
     .instagram-section-photo> img{
         height: 300px;
@@ -1792,6 +1809,16 @@ img{
         .hero-section{
             padding: 0px;        
         }
+
+    .select2-container .select2-selection--single,
+.select2-container .select2-selection--multiple {
+    min-height: 42px !important;
+}
+
+.select2-selection__rendered{
+    padding: 0px 16px !important;
+    border-radius: 0.5rem;
+}
 }
 
 
