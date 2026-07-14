@@ -928,6 +928,14 @@ ul.agb-datenschutz li a{
         line-height: var(--lh-24);
     }
 
+    .contact-form .form-control-lg{
+        padding: .5rem 0rem;
+    }
+
+    .contact-form .form-control{
+        padding: .375rem 0rem;
+    }
+
 /* general-css-end */
 
 /* Animation keyframes */
