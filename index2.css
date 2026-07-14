@@ -488,6 +488,7 @@ p{
     border-top-right-radius: 2rem;
 }
 
+.agb-section .accordion-button,
 .datenschutz-section .accordion-button{
     align-items: start;
 }
@@ -850,6 +851,7 @@ ul.agb-datenschutz li a{
     padding: 3rem;
 }
 
+.agb-section,
 .datenschutz-section{
     padding: var(--sectional-padding);
     background: url('assets/sectional-bg.png') var(--gradient-bg);
@@ -858,6 +860,7 @@ ul.agb-datenschutz li a{
     
 }
 
+.agb-section,
 .datenschutz-section{
     .right-col{
         p{
@@ -865,11 +868,17 @@ ul.agb-datenschutz li a{
         }
     }
 
-    #accordion-datenschutz{
-        margin-top: 3rem;
-    }
 }
 
+#accordion-agb,#accordion-datenschutz{
+    margin-top: 3rem;
+
+    .accordion-body{
+        p {
+            font-weight: var(--fw-400);
+        }
+    }
+}
 
 /* general-css-end */
 
@@ -1290,7 +1299,7 @@ ul.agb-datenschutz li p{
         line-height: var(--lh-21);
     }
 
-    .datenschutz-section h2{
+    .agb-section h2,.datenschutz-section h2{
         font-size: var(--fs-20);
         line-height: var(--lh-24);
     }
@@ -1302,7 +1311,7 @@ ul.agb-datenschutz li p{
             align-self: end;  
 }
 
-    #accordion-datenschutz{
+    #accordion-agb,#accordion-datenschutz{
         h4.accordion-heading{
             font-size: var(--fs-20);
             line-height: var(--lh-30);
