@@ -1819,6 +1819,21 @@ ul.nav.nav-underline{
     padding: 0px 16px !important;
     border-radius: 0.5rem;
 }
+
+.reg-close {
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    border: 0;
+    height: 25px;
+    width: 25px;
+    border-radius: 55px;
+    font-size: var(--fs-24);
+    font-weight: var(--fw-400);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 }
 
 
