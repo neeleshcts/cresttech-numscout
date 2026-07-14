@@ -1186,7 +1186,7 @@ img{
 }
 
 .subscribe{
-    margin-top: .25rem !important;
+    margin-top: 1rem !important;
     margin-bottom: 1rem !important;
     
 }
@@ -1366,13 +1366,7 @@ img{
     border-color:unset !important;
 }
 
-.modal-form {
-    .subscribe{
-        label {
-            margin-top: 1rem;
-        }
-    }
-}
+
 
 /* fa-customization */
 
