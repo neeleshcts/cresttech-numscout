@@ -851,6 +851,14 @@ ul.agb-datenschutz li a{
     padding: 3rem;
 }
 
+.agb-section, 
+.datenschutz-section{
+    a{
+        color: var(--global-white);
+    }
+}
+
+.impressum-section,
 .agb-section,
 .datenschutz-section{
     padding: var(--sectional-padding);
@@ -870,6 +878,8 @@ ul.agb-datenschutz li a{
 
 }
 
+
+
 #accordion-agb,#accordion-datenschutz{
     margin-top: 3rem;
 
@@ -877,6 +887,31 @@ ul.agb-datenschutz li a{
         p {
             font-weight: var(--fw-400);
         }
+    }
+}
+
+.impressum-section {
+    &{
+        padding: 3rem 0;
+    }
+
+    h2.title{
+        text-transform: none;
+    }
+
+    p{
+        font-weight: var(--fw-400);
+    }
+
+    hr{
+        height: 4px;
+        color: #fff;
+
+    }
+
+    .impressum-section hr{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
     }
 }
 
