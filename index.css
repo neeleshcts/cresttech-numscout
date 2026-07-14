@@ -1128,9 +1128,8 @@ img{
 
 .modal-header button{
     position: absolute;
-    right: 4%;
-    top: 0%;   
-    transform:translateY(50%);
+    right: 0%;
+    top: 0%;       
     z-index: 3;
     border-radius: 50px;
     background-color: #fff;
@@ -1480,7 +1479,7 @@ img{
 /* Arrow icon */
 .select2-container .select2-selection--single .select2-selection__arrow {
     height: calc(3.5rem + 2px);
-    right: 10px;
+    right: 4% !important;
 }
 
 .select2-container .select2-selection--single .select2-selection__arrow b {
@@ -1742,7 +1741,7 @@ img{
     }
 
     .select2-container--default .select2-selection--single .select2-selection__rendered{
-        font-size: 14px;
+        font-size: 16px;
     }
 
 
