@@ -1026,6 +1026,17 @@ img{
     color: #fff;
 }
 
+.footer-section small{
+    a{
+            text-decoration: none;
+            color: var(--global-white);
+    }
+
+    a:hover{
+        text-decoration: underline;
+    }
+}
+
 .footer-hr{
     height: 4px;
     color: #fff;
