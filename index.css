@@ -167,6 +167,7 @@ p{
     line-height: var(--lh-27);    
 }
 
+
 h1,h2,h3,h4,li,p{
     color: var(--global-white);
 }

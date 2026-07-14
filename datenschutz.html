@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/numscout-favs/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/numscout-favs//apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/numscout-favs//apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/numscout-favs//apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/numscout-favs//apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/numscout-favs//apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/numscout-favs//apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/numscout-favs//apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/numscout-favs//apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/numscout-favs//android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/numscout-favs//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/numscout-favs//favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/numscout-favs//favicon-16x16.png">
+    <link rel="manifest" href="assets/numscout-favs//manifest.json">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0/dist/css/select2.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="index2.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">            
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/numscout-favs//ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title>numscout-Unternehmen</title>
+</head>
+<body>
+        <header class="numscout-header">
+        <div class="container">
+            <nav class="navbar navbar-expand-xl justify-content-between align-items-center">
+                    <!-- logo -->
+                    <a class="navbar-brand" href="/">                        
+                            <img class="" src="assets/svgs/numscout-logo-header.svg" />                                                
+                    </a>
+                    <!-- Collapsible Navigation bar -->
+                    <div id="navbarNav" class="collapse navbar-collapse">
+                        <!-- Navigation tabs -->
+
+                                                    
+                    </div> 
+                    <!-- Offcanvas preparation -->
+                     <!-- d-none is set please remove it to make it visible -->
+                      
+                    <div id="offcanvasNavbar" class="offcanvas offcanvas-end numscout-offcanvas" tabindex="-1" data-bs-backdrop="static"  aria-labelledby="offcanvasNavBarLabel">                        
+                        <!-- Navigation tabs -->
+                         <div class="container">
+                             <div class="offcanvas-body ">
+                                 <div class="w-100 d-flex d-xl-none justify-content-start align-items-center">
+                                     <div class="numscout-offcanvas-quick-links">
+                                         <ul class="navbar-nav align-items-start gap-3">
+                                             <li class="nav-item"><a class="nav-link" href="companies.html">| Für Unternehmen </a></li>                                  
+                                             <li class="nav-item"><a class="nav-link" href="private.html">| Für Private </a></li>                                     
+                                             <li class="nav-item"><a class="nav-link" href="blog.html">| Blog</a></li>
+                                             <li class="nav-item d-xl-none"><a class="nav-link" href="contact.html">| Kontakt</a></li>
+                                         </ul>
+                                     </div>                                                                               
+                                 </div>
+                             </div> 
+                             <!-- offcanvas footer is not available in bootstrap  -->
+                             <div class="offcanvas-footer">
+                                <small>© 2026 by numscouters gmbh </small>
+                                <br>
+                                <small>
+                                    Impressum | AGB | Datenschutz
+                                </small>
+                             </div>
+                         </div>
+                         
+                        </div> 
+                        <div class="w-100 d-none d-xl-flex justify-content-center align-items-center">
+                             <div class="quick-links">
+                                 <ul class="navbar-nav align-items-center gap-3">
+                                     <li class="nav-item">
+                                        <a href="companies.html" >Für Unternehmen </a>
+                                     </li>  
+                                     <li class="nav-item">|</li>                                                                                                  
+                                     <li class="nav-item">
+                                        <a href="private.html" >Für Private</a>
+                                    </li>        
+                                    <li class="nav-item">|</li>
+                                     <li class="nav-item">
+                                        <a href="blog.html" >Blog</a>
+                                    </li>                                     
+                                 </ul>
+                             </div>                                                                               
+                        </div>
+                    
+            
+                    <!-- Language switch -->
+                    <div class="d-flex justify-content-center align-items-center gap-2 gap-sm-3">
+                        <div class="language-switch">
+                            <ul class="d-flex justify-content-center align-items-center gap-1 h-100">
+                                <li class="">DE</li>
+                                <li class="">|</li>
+                                <li class="">EN</li>
+                            </ul>
+                        </div>
+        
+                         <!-- Sign-in tab and contact -->
+                         <div class="signin-contact">
+                            <ul class="d-flex justify-content-start align-items-center gap-2 h-100">
+                                <li class="user">
+                                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#userCreds">
+                                        <img src="assets/svgs/user.svg" />
+                                    </button>                                    
+                                </li>
+                                <li class="d-none d-xl-block kontakt">
+                                    <a class="" href="contact.html">Kontakt</a>
+                                </li>
+                            </ul>
+                        </div>                    
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                                <div class="hamburger-icon">
+                                    <div class="hamburger-icon-strips"></div>
+                                    <div class="hamburger-icon-strips"></div>
+                                    <div class="hamburger-icon-strips"></div>
+                                </div>
+                        </button>
+                    </div>
+                
+                    <!-- Collapsible buttons -->    
+                </nav>            
+            </div>
+        </header>
+        <!-- main -->
+         <main>
+            <!-- banner section -->
+             <section class="companies-hero-section">
+                 <div class="container">
+                     <div class="row  row-cols-1 row-cols-lg-2">
+                         <div class="col align-self-center">
+                             <h1 class="text-uppercase">Datenschutz</h1>
+                             <div class="row row-gap-3 agb-datenschutz-props">
+                                <div class="col-12 col-sm-5 agb-datenschutz-container">
+                                    <h3>Herausgeber</h3>
+                                    <ul class="agb-datenschutz">
+                                        <li>                                            
+                                                <img src="assets/svgs/address-pin.svg" />
+                                                <p>
+                                                    numscouters gmbh<br>
+                                                    Neuhofstrasse 45<br>
+                                                    CH-8315 Lindau
+                                                </p>
+                                            
+                                        </li>
+                                        <li>                                            
+                                                <img src="assets/svgs/email.svg" />
+                                                <a href="mailto:info@numscout.ch">
+                                                    info@numscout.ch
+                                                </a>
+                                            
+                                        </li>
+                                        <li>                                            
+                                                <img src="assets/svgs/icon-web.svg" />
+                                                <p>
+                                                    www.numscout.ch
+                                                </p>
+                                            
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-sm-1 agb-datenschutz-container">
+                                    <div class="dividing-line"></div>
+                                </div>
+                                <div class="col-12 col-sm-6 agb-datenschutz-container">
+                                    <h3>Konzeption and Realisation</h3>
+                                    <ul class="agb-datenschutz">
+                                        <li>
+                                            <img src="assets/svgs/address-pin.svg" />
+                                            <p>
+                                                Loewenmut Punkt GmbH<br>
+                                                Ida-Sträuli-Strasse 95<br>
+                                                CH-8404 Winterthur
+                                            </p>
+                                        </li>
+                                        <li>                                            
+                                                <img src="assets/svgs/email.svg" />
+                                                <a href="mailto:info@lowenmut.ch">
+                                                    info@loewenmut.ch
+                                                </a>
+                                            
+                                        </li>
+                                        <li>                                            
+                                                <img src="assets/svgs/icon-web.svg" />
+                                                <p>
+                                                    www.loewenmut.ch
+                                                </p>
+                                            
+                                        </li>   
+                                    </ul>
+                                </div>
+                             </div>
+
+                         </div>
+                         <div class="col align-self-center image-col">
+                             <div class="hero-image-container">                            
+                             <img class="companies-hero-image w-100" src="assets/header-img-daten.png" />                  
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </section>
+
+             <!-- Datenschutz section -->
+              <section class="datenschutz-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <h2>
+                                Datenschutzerklärung der numscouters gmbh
+                            </h2>
+                                
+                        </div>
+                        <div class="col-12 col-lg-6 right-col">
+                            <p>
+                                Datenschutz und Datensicherheit sind wichtig für die numscouters gmbh («numscout»; «wir»). Wir bearbeiten Ihre Personendaten verantwortungsbewusst, in Übereinstimmung mit anwendbaren gesetzlichen Bestimmungen und gemäss dieser Datenschutzerklärung.
+                            </p>
+
+                        </div>                        
+                    </div>
+
+
+
+                    <div class="accordion" id="accordion-datenschutz">
+
+                                    <div class="accordion-item">
+                                            <div class="accordion-header">
+                                                <button class="accordion-button align-items-start type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                    <div class="button-icon-container"> 
+                                                        <h4 class="accordion-heading">
+                                                            Inhalt dieser Datenschutzerklärung
+                                                        </h4>
+                                                                                                               
+                                                    </div>
+                                                </button>
+                                            </div>
+
+                                            <div class="accordion-collapse collapse show" id="collapseOne" data-bs-parent="#accordion-datenschutz">
+                                                <div class="accordion-body">
+                                                    <p>In dieser Datenschutzerklärung informieren wir Sie darüber, wie wir Personendaten erheben und bearbeiten, wenn Sie unsere Website unter www.numscout.ch («Website») oder Social-Media-Seiten besuchen, uns kontaktieren oder unsere Leistungen in Anspruch nehmen.</p>
+                                                </div>
+                                            </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                            <div class="accordion-header">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                                    <div class="button-icon-container"> 
+                                                        <h4 class="accordion-heading">
+                                                            Verantwortlicher für die Datenbearbeitung
+                                                        </h4>
+                                                                                                               
+                                                    </div>
+                                                </button>
+                                            </div>
+
+                                            <div class="accordion-collapse collapse show" id="collapseTwo" data-bs-parent="#accordion-datenschutz">
+                                                <div class="accordion-body">
+                                                    <p>Für die in dieser Datenschutzerklärung beschriebenen Datenbearbeitungen ist numscouters gmbh, Neuhofstrasse 45, 8315 Lindau, verantwortlich.</p>
+                                                    <p>Bei Fragen oder wenn Sie Ihre datenschutzrechtlichen Betroffenenrechte wahrnehmen möchten, kontaktieren Sie uns bitte über <a href="mailto:info@numscout.ch">info@numscout.ch</a> oder schreiben Sie an: numscouters gmbh, Neuhofstrasse 45, 8315 Lindau.</p>
+                                                </div>
+                                            </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                            <div class="accordion-header">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                                    <div class="button-icon-container"> 
+                                                        <h4 class="accordion-heading">
+                                                            Bei der Kommunikation und Leistungserbringung bearbeitete Personendaten
+                                                        </h4>
+                                                                                                               
+                                                    </div>
+                                                </button>
+                                            </div>
+
+                                            <div class="accordion-collapse collapse show" id="collapseThree" data-bs-parent="#accordion-datenschutz">
+                                                <div class="accordion-body">
+                                                    <p>Wir erheben die von Ihnen an uns übermittelten Informationen wie folgt:</p>
+                                                    <ul>
+                                                    <li>
+                                                    <p>wenn Sie uns kontaktieren;</p>
+                                                    </li>
+                                                    <li>
+                                                    <p>wenn Sie unsere Website besuchen oder sich auf der Website oder der Online-Plattform als Nutzer registrieren;</p>
+                                                    </li>
+                                                    <li>
+                                                    <p>wenn Sie Waren oder Dienstleistungen bestellen;</p>
+                                                    </li>
+                                                    <li>
+                                                    <p>wenn Sie sich auf eine Stelle bei uns bewerben.</p>
+                                                    </li>
+                                                    </ul>
+                                                    <p>Dazu gehören allgemeine Personendaten, z.B. Name und Kontaktdaten (wie Adresse, Telefonnummer oder E-Mail Adresse), allenfalls Angaben zu Ihrer Position oder Rolle bei der Organisation, in deren Namen Sie uns kontaktieren sowie Informationen jeder Art aus Korrespondenz, Kontakten und Interaktionen mit uns.</p>
+                                                    <p>Wenn Sie kostenpflichtige Waren oder Dienstleistungen bestellen, erfragen wir zudem Ihre Finanzdaten, z.B. Ihre bevorzugte Zahlungsmethode und die Rechnungsadresse.</p>
+                                                </div>
+                                            </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                            <div class="accordion-header">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                                    <div class="button-icon-container"> 
+                                                        <h4 class="accordion-heading">
+                                                            Bereitstellung und Nutzung unserer Website und Online Plattform
+                                                        </h4>
+                                                                                                               
+                                                    </div>
+                                                </button>
+                                            </div>
+
+                                            <div class="accordion-collapse collapse show" id="collapseFour" data-bs-parent="#accordion-datenschutz">
+                                                <div class="accordion-body">
+                                                    <p>Sie können sich auf der Website über numscout und unser Leistungsangebot informieren, ohne uns mitzuteilen, wer Sie sind. Wie bei jeder Verbindung mit einem Webserver, protokolliert und speichert der Server, auf dem wir die Website und die Online Plattform bereitstellen lassen, automatisch gewisse technische Daten und speichert sie für kurze Zeit. Dazu gehören die IP-Adresse und das Betriebssystem Ihres Geräts, das Datum und der Zeitpunkt der Nutzung sowie die Art des Browsers, über den Sie auf die Website oder Online Plattform zugreifen.</p>
+                                                </div>
+                                            </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                            <div class="accordion-header">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                                    <div class="button-icon-container"> 
+                                                        <h4 class="accordion-heading">
+                                                            Nutzung unserer Online Plattform
+                                                        </h4>
+                                                                                                               
+                                                    </div>
+                                                </button>
+                                            </div>
+
+                                            <div class="accordion-collapse collapse show" id="collapseFive" data-bs-parent="#accordion-datenschutz">
+                                                <div class="accordion-body">
+                                                    <p>Wir betreiben für unsere Abonnenten eine Online Plattform («Online Plattform»). Wenn Sie sich auf der Online Plattform als Nutzer registrieren, erheben wir die von Ihnen an uns übermittelten Informationen. Dazu gehören allgemeine Personendaten wie Name und Kontaktdaten sowie personenbezogene Informationen, die Sie oder andere Nutzer bei der Nutzung der Online Plattform eingeben, hochladen, generieren, speichern und bearbeiten.</p>
+                                                </div>
+                                            </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                            <div class="accordion-header">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                                                    <div class="button-icon-container"> 
+                                                        <h4 class="accordion-heading">
+                                                            Webanalyse
+                                                        </h4>
+                                                                                                               
+                                                    </div>
+                                                </button>
+                                            </div>
+
+                                            <div class="accordion-collapse collapse show" id="collapseSix" data-bs-parent="#accordion-datenschutz">
+                                                <div class="accordion-body">
+                                                    <p>Wir verwenden Webanalyse-Dienste (derzeit Google Analytics), um die Nutzung der Website auszuwerten und Informationen für ihre Optimierung zu erhalten. Die von uns verwendeten Webanalyse-Dienste erheben und speichern Nutzungsdaten unter Verwendung von Cookies. Vor ihrer Übermittlung an einen Server ausserhalb der Schweiz/EU/EWR werden die anfragenden IP-Adressen gekürzt. Wir übermitteln somit keine Personendaten an die Anbieterin der Webanalysedienste im Ausland.</p>
+                                                </div>
+                                            </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                            <div class="accordion-header">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                                                    <div class="button-icon-container"> 
+                                                        <h4 class="accordion-heading">
+                                                            Werbetechnologien
+                                                        </h4>
+                                                                                                               
+                                                    </div>
+                                                </button>
+                                            </div>
+
+                                            <div class="accordion-collapse collapse show" id="collapseSeven" data-bs-parent="#accordion-datenschutz">
+                                                <div class="accordion-body">
+                                                    <p>Wir verwenden auf der Website Werbetechnologien von Google Ads. Damit können wir Personen, die unsere Website besuchen, beim Besuch anderer Websites mit für sie relevanter Werbung ansprechen. Die Werbemittel werden auf den von Ihnen besuchten Websites basierend auf einer Analyse Ihrer vorgängigen Nutzung unserer Website angezeigt. Hierfür setzen die Anbieterinnen der Werbetechnologien beim Besuch unserer Website Cookies.</p>
+                                                </div>
+                                            </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                            <div class="accordion-header">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+                                                    <div class="button-icon-container"> 
+                                                        <h4 class="accordion-heading">
+                                                            Social Plugins
+                                                        </h4>
+                                                                                                               
+                                                    </div>
+                                                </button>
+                                            </div>
+
+                                            <div class="accordion-collapse collapse show" id="collapseEight" data-bs-parent="#accordion-datenschutz">
+                                                <div class="accordion-body">
+                                                    <p>Die auf der Website verwendeten Social Plugins ermöglichen es Ihnen, unsere Inhalte in sozialen Netzwerken zu empfehlen und zu teilen. Die Social Plugins können Sie auf der Website anhand der Logos des jeweiligen sozialen Netzwerks erkennen. Wenn Sie mit dem Social Plugin interagieren, werden Daten an die jeweilige Anbieterin des sozialen Netzwerks gesendet.</p>
+                                                </div>
+                                            </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                            <div class="accordion-header">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
+                                                    <div class="button-icon-container"> 
+                                                        <h4 class="accordion-heading">
+                                                            Ressourcen von externen Websites
+                                                        </h4>
+                                                                                                               
+                                                    </div>
+                                                </button>
+                                            </div>
+
+                                            <div class="accordion-collapse collapse show" id="collapseNine" data-bs-parent="#accordion-datenschutz">
+                                                <div class="accordion-body">
+                                                    <p>Wir binden auf unserer Website Ressourcen von externen Servern ein. Diese enthalten sichtbare Inhalte (Google Maps, Youtube, Instagram und Facebook Feeds).</p>
+                                                    <p>Beim Abruf dieser Ressourcen erfährt die Betreiberin der externen Server Ihre IP-Adresse und/oder gewisse Randdaten, die für die Nutzung der Server der externen Betreiberin notwendig sind.</p>
+                                                </div>
+                                            </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                            <div class="accordion-header">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="true" aria-controls="collapseTen">
+                                                    <div class="button-icon-container"> 
+                                                        <h4 class="accordion-heading">
+                                                            Anmerkung zum Einsatz von Cookies
+                                                        </h4>
+                                                                                                               
+                                                    </div>
+                                                </button>
+                                            </div>
+
+                                            <div class="accordion-collapse collapse show" id="collapseTen" data-bs-parent="#accordion-datenschutz">
+                                                <div class="accordion-body">
+                                                    <p>Wir verwenden Cookies, Tags und ähnliche Technologien auf der Website, um Ihnen die bestmögliche Benutzererfahrung zu bieten und um uns zu helfen, die Website zu verbessern. Cookies sind Textdateien, die auf Ihren Computer oder Ihr Mobilgerät heruntergeladen werden, wenn Sie eine Website besuchen oder eine App verwenden.</p>
+                                                    <p>Einige der von uns verwendeten Cookies sind notwendig, um bestimmte Funktionen der Website zur Verfügung zu stellen. Darüber hinaus verwenden wir Cookies, um die Nutzung der Website zu analysieren und um Informationen zur Optimierung der Website zu erhalten.</p>
+                                                    <p>Sie können Ihren Browser anweisen, keine Cookies zu akzeptieren oder Sie jeweils anzufragen, bevor ein Cookie gesetzt wird. Sie können auch Cookies auf Ihrem Gerät löschen, indem Sie die entsprechende Funktion Ihres Browsers benutzen.</p>
+                                                </div>
+                                            </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                            <div class="accordion-header">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="true" aria-controls="collapseEleven">
+                                                    <div class="button-icon-container"> 
+                                                        <h4 class="accordion-heading">
+                                                            Nutzung unserer Social-Media-Seiten
+                                                        </h4>
+                                                                                                               
+                                                    </div>
+                                                </button>
+                                            </div>
+
+                                            <div class="accordion-collapse collapse show" id="collapseEleven" data-bs-parent="#accordion-datenschutz">
+                                                <div class="accordion-body">
+                                                    <p>Auf unseren Seiten in sozialen Medien finden Sie Beiträge zu aktuellen Entwicklungen bei numscout sowie zu unserem Leistungsangebot. Die Anbieterinnen der sozialen Medien erheben und analysieren Nutzungsdaten wie die Anzahl Besuche und demographische Angaben zu den Besuchern unserer Unternehmensseiten.</p>
+                                                    <p>Wir erhalten von den Anbieterinnen der sozialen Medien basierend darauf erstellte Auswertungen. Diese enthalten nur aggregierte oder auf andere Weise genügend anonymisierte Daten. Nur die jeweilige Anbieterin kann Sie aufgrund der erhobenen Nutzungsdaten identifizieren. Beachten Sie daher bitte die Datenschutzhinweise der jeweiligen Anbieterin.</p>
+                                                </div>
+                                            </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                            <div class="accordion-header">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="true" aria-controls="collapseTwelve">
+                                                    <div class="button-icon-container"> 
+                                                        <h4 class="accordion-heading">
+                                                            Nutzung und Optimierung unseres Newsletters
+                                                        </h4>
+                                                                                                               
+                                                    </div>
+                                                </button>
+                                            </div>
+
+                                            <div class="accordion-collapse collapse show" id="collapseTwelve" data-bs-parent="#accordion-datenschutz">
+                                                <div class="accordion-body">
+                                                    <p>Wenn Sie sich für unseren Newsletter anmelden, erheben wir die von Ihnen an uns übermittelten Informationen. Dazu gehören allgemeine Personendaten wie Vorname, Name und E-Mail-Adresse. Wir verwenden Analysedienste, um die Nutzung unseres Newsletters zu messen und zu analysieren. Die Analysedienste erheben und analysieren Nutzungsdaten wie die Anzahl Personen, die einen Newsletter geöffnet oder auf bestimmte Beiträge geklickt haben. Wir erhalten basierend darauf erstellte Auswertungen. Diese ermöglichen es uns, unseren Newsletter zu optimieren und Ihnen Inhalte bereitzustellen, die Sie interessieren.</p>
+                                                    <p>Sie können uns auch jederzeit mitteilen, dass Sie in Zukunft auf den Erhalt unseres Newsletters verzichten möchten. Bitte nutzen Sie hierzu den Abmeldelink am Ende des Newsletters. Wenn Sie auf diesen klicken, werden wir Ihre Nutzung des Newsletters künftig nicht mehr messen und analysieren.</p>
+                                                </div>
+                                            </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                            <div class="accordion-header">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="true" aria-controls="collapseThirteen">
+                                                    <div class="button-icon-container"> 
+                                                        <h4 class="accordion-heading">
+                                                            Zu welchen Zwecken wir Ihre Personendaten bearbeiten und auf welcher Basis
+                                                        </h4>
+                                                                                                               
+                                                    </div>
+                                                </button>
+                                            </div>
+
+                                            <div class="accordion-collapse collapse show" id="collapseThirteen" data-bs-parent="#accordion-datenschutz">
+                                                <div class="accordion-body">
+                                                    <p>Ihre Personendaten bearbeiten wir primär, um über unser Leistungsangebot zu informieren und unsere Leistungen entsprechend unseren vertraglichen und gesetzlichen Pflichten zu erbringen, zu dokumentieren und abzurechnen.</p>
+                                                    <p>Zudem bearbeiten wir Ihre Personendaten zu folgenden Zwecken:</p>
+                                                    <ul>
+                                                    <li>Beantwortung Ihrer Anfragen und Kommunikation mit Ihnen;</li>
+                                                    <li>Bearbeitung Ihrer Registrierung oder Bestellungen;</li>
+                                                    <li>Beantwortung von Bewerbungen;</li>
+                                                    <li>Bereitstellung der Website und der Online-Plattform;</li>
+                                                    <li>Analyse und Optimierung der Nutzung der Website und der Online-Plattform;</li>
+                                                    <li>Entwicklung und Verbesserung von Produkten und Dienstleistungen;</li>
+                                                    <li>Marketing und Werbung;</li>
+                                                    <li>Optimierung unserer Beiträge auf unseren Social-Media-Unternehmensseiten;</li>
+                                                    <li>Information über neue Entwicklungen bei numscout und über neue Dienstleistungen (z.B. über unseren Newsletter; wobei Sie uns jederzeit mitteilen können, dass Sie auf den Erhalt solcher Informationen in Zukunft verzichten möchten);</li>
+                                                    <li>Erfüllung gesetzlicher Pflichten; und</li>
+                                                    <li>Durchsetzung von Rechtsansprüchen.</li>
+                                                    <li>Weitere Zwecke, z.B. im Rahmen unserer internen Abläufe und Administration, zu Schulungs- und Qualitätssicherungszwecken, zur Unternehmensführung oder zum Risikomanagement.</li>
+                                                    </ul>
+                                                    <p>Wir beschaffen und bearbeiten Personendaten, um die angemessene Sicherheit unserer IT und unserer sonstigen Infrastruktur (z.B. Gebäude) zu gewährleisten und laufend zu verbessern. Hierzu gehören z.B. die Überwachung und die Kontrolle von elektronischen Zugriffen auf unsere IT-Systeme sowie von physischen Zugängen zu unseren Räumlichkeiten, Analysen und Tests unserer IT-Infrastrukturen, System- und Fehlerprüfungen und die Erstellung von Sicherheitskopien.</p>
+                                                    <p>Wir haben ein den genannten Zwecken entsprechendes berechtigtes Interesse an der Bearbeitung Ihrer Personendaten. Einige Bearbeitungen sind zudem notwendig, damit wir unsere vertraglichen Pflichten Ihnen gegenüber oder unsere gesetzlichen Pflichten (z.B. Aufbewahrungspflichten) erfüllen können. Auf dieser Basis bearbeiten wir Ihre Personendaten, wenn und soweit das anwendbare Datenschutzrecht für die Rechtmässigkeit der Datenbearbeitung generell oder für bestimmte Bearbeitungstätigkeiten eine Rechtsgrundlage oder Rechtfertigung erfordert.</p>
+                                                </div>
+                                            </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                            <div class="accordion-header">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourteen" aria-expanded="true" aria-controls="collapseFourteen">
+                                                    <div class="button-icon-container"> 
+                                                        <h4 class="accordion-heading">
+                                                            Wie wir Ihre Personendaten speichern und schützen
+                                                        </h4>
+                                                                                                               
+                                                    </div>
+                                                </button>
+                                            </div>
+
+                                            <div class="accordion-collapse collapse show" id="collapseFourteen" data-bs-parent="#accordion-datenschutz">
+                                                <div class="accordion-body">
+                                                    <p>Wir speichern Ihre Personendaten nur in dem Umfang und so lange, wie dies für die Erfüllung der in dieser Datenschutzerklärung beschriebenen Zwecke oder zur Erfüllung gesetzlicher Pflichten notwendig ist.</p>
+                                                    <p>Im Interesse der Integrität und der Vertraulichkeit der Personendaten treffen wir angemessene technische und organisatorische Massnahmen. Wir implementieren entsprechend unserer Risikobeurteilung insbesondere Zugangskontrollen, Zugriffskontrollen sowie Verfahren zur regelmässigen Überprüfung, Bewertung und Evaluierung der Wirksamkeit der Massnahmen.</p>
+                                                </div>
+                                            </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                            <div class="accordion-header">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifteen" aria-expanded="true" aria-controls="collapseFifteen">
+                                                    <div class="button-icon-container"> 
+                                                        <h4 class="accordion-heading">
+                                                            An wen wir Ihre Personendaten weitergeben
+                                                        </h4>
+                                                                                                               
+                                                    </div>
+                                                </button>
+                                            </div>
+
+                                            <div class="accordion-collapse collapse show" id="collapseFifteen" data-bs-parent="#accordion-datenschutz">
+                                                <div class="accordion-body">
+                                                    <p>Zur Erreichung der in dieser Datenschutzerklärung beschriebenen Zwecke kann es notwendig sein, dass wir Ihre Personendaten an andere Unternehmen weitergeben. Die Kategorien von Empfängerinnen sind externe Dienstleister (bspw. IT-Provider, Banken, Versicherungen, Inkassofirmen, Wirtschaftsauskunfteien, Adressprüfer, Beratungsunternehmen) und (gegebenenfalls) Behörden und Gerichte.</p>
+                                                </div>
+                                            </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                            <div class="accordion-header">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSixteen" aria-expanded="true" aria-controls="collapseSixteen">
+                                                    <div class="button-icon-container"> 
+                                                        <h4 class="accordion-heading">
+                                                            Ort der Bearbeitung
+                                                        </h4>
+                                                                                                               
+                                                    </div>
+                                                </button>
+                                            </div>
+
+                                            <div class="accordion-collapse collapse show" id="collapseSixteen" data-bs-parent="#accordion-datenschutz">
+                                                <div class="accordion-body">
+                                                    <p>Ihre Personendaten speichern und bearbeiten wir nur in der Schweiz und in der EU.</p>
+                                                </div>
+                                            </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                            <div class="accordion-header">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeventeen" aria-expanded="true" aria-controls="collapseSeventeen">
+                                                    <div class="button-icon-container"> 
+                                                        <h4 class="accordion-heading">
+                                                            Ihre Rechte in Bezug auf Ihre Personendaten
+                                                        </h4>
+                                                                                                               
+                                                    </div>
+                                                </button>
+                                            </div>
+
+                                            <div class="accordion-collapse collapse show" id="collapseSeventeen" data-bs-parent="#accordion-datenschutz">
+                                                <div class="accordion-body">
+                                                    <p>Sie haben die folgenden Rechte in Bezug auf Personendaten, die Sie betreffen:</p>
+                                                    <ul>
+                                                    <li>Das Recht, Auskunft darüber zu erhalten, welche Personendaten wir über Sie speichern und wie wir diese bearbeiten;</li>
+                                                    <li>das Recht auf Herausgabe oder Übertragung einer Kopie Ihrer Personendaten in einem gängigen Format;</li>
+                                                    <li>das Recht auf Berichtigung Ihrer Personendaten;</li>
+                                                    <li>das Recht auf Löschung Ihrer Personendaten; sowie</li>
+                                                    <li>das Recht, Bearbeitungen Ihrer Personendaten zu widersprechen.</li>
+                                                    </ul>
+                                                    <p>Beachten Sie bitte, dass für diese Rechte gesetzliche Voraussetzungen und Ausnahmen gelten. Soweit rechtlich zulässig, können wir Ihre Anfrage zur Ausübung dieser Rechte ablehnen. Sie haben ausserdem das Recht, bei der zuständigen Datenschutzaufsichtsbehörde eine Beschwerde einzureichen.</p>
+                                                </div>
+                                            </div>
+                                    </div>
+
+                                    <div class="accordion-item">
+                                            <div class="accordion-header">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEighteen" aria-expanded="true" aria-controls="collapseEighteen">
+                                                    <div class="button-icon-container"> 
+                                                        <h4 class="accordion-heading">
+                                                            Wie wir diese Datenschutzerklärung ändern können
+                                                        </h4>
+                                                                                                               
+                                                    </div>
+                                                </button>
+                                            </div>
+
+                                            <div class="accordion-collapse collapse show" id="collapseEighteen" data-bs-parent="#accordion-datenschutz">
+                                                <div class="accordion-body">
+                                                    <p>Wir können diese Datenschutzerklärung jederzeit ändern, insbesondere wenn wir unsere Datenbearbeitungen ändern oder wenn neue Rechtsvorschriften anwendbar werden. Es gilt die jeweils auf unserer Website (https://numscout.ch/datenschutz/de) bereitgestellte Version.</p>
+                                                </div>
+                                            </div>
+                                    </div>
+
+                    </div>
+
+
+                </div>
+
+
+              </section>
+
+             
+         </main>
+
+                     <!-- footer -->
+            <footer class="footer-section" id="footer">    
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-xl-6">
+                            <div class="numscout-container">
+                                <img src="assets/svgs/numscout-logo-footer.svg" />
+                                <p>Entdecke die Welt deiner Zahlen auf <strong>numscout.ch</strong> <br>und berechne dein Glück...</p>
+                                <div class="footer-social-links">
+                                    <a href="#" class="">
+                                        <img src="assets/svgs/facebook.svg" />
+                                    </a>
+                                    <a href="#" class="">
+                                        <img src="assets/svgs/x.svg" />
+                                    </a>
+                                    <a href="#" class="">
+                                        <img src="assets/svgs/linkedin.svg" />
+                                    </a>
+                                    <a href="#" class="">
+                                        <img src="assets/svgs/whatsapp.svg" />
+                                    </a>
+                                    <a href="#" class="">
+                                        <img src="assets/svgs/email.svg" />
+                                    </a>
+                                    <a href="#" class="">
+                                        <img src="assets/svgs/link.svg" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-xl-3">
+                            <div class="footer-quick-links">
+                                <h3>Quick Links</h3>
+                                <ul>
+                                    <li><a href="uber-uns.html">Über numscout</a></li>
+                                    <li><a href="companies.html" >Für Unternehmen</a></li>
+                                    <li><a href="private.html" >Für Private</a></li>
+                                    <li><a href="blog.html" >Blog</a></li>
+                                    <li><a href="contact.html" >Kontakt</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class=" col-12 col-sm-6 col-xl-3">
+                            <div class="footer-address">
+                                <h3>ADRESSE</h3>
+                                <div class="location">
+                                    <img src="assets/svgs/address-pin.svg" />
+                                    <p>Neuhofstrasse 45 <br> CH-8315 Lindau</p>
+                                </div>
+                                <div class="contact-email">
+                                    <img src="assets/svgs/email.svg" />
+                                    <a href="mailto:info@numscout.ch"  class="footer-email">info@numscout.ch</a>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="footer-hr"></hr>
+                    <div class="text-center text-xl-start d-flex flex-column flex-xl-row justify-content-between align-items-center">
+                        <small>
+                            © 2026 by numscouters gmbh | Konzept und Design by <span><a href="https://www.loewenmut.ch/" target="_blank"><img src="assets/svgs/loewenmut-logo.svg"/></a></span>
+                        </small>
+                        <small>
+                            Impressum | AGB | Datenschutz
+                        </small>
+                    </div>
+                </div>
+            </footer>
+
+                     <div class="modal fade" id="userCreds" tabindex="-1" aria-labelledby="user-creds" aria-hidden="true">
+            <!-- Modal dialog -->
+             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content ">
+                    <div class="modal-body w-100 user-creds">
+                        <button class="reg-close" data-bs-dismiss="modal" aria-label="Close">
+                                X
+                        </button>
+                        <!-- Container for navigation tabs -->                
+                       <div class="container">
+                            <!-- Navigation tabs -->
+                           <h1 id="modal-title" class="modal-title">Ich bin neu hier</h1>
+                           <ul class="nav nav-underline form-navigation justify-content-center align-items-center menu-navigation-tabs" role="tablist">
+                             <li class="nav-item">
+                               <a class="nav-link active btn" role="button" data-bs-toggle="tab" aria-current="page" href="#signup">Registrieren</a>
+                             </li>
+                             <li class="nav-item">
+                               <a class="nav-link btn" role="button"  data-bs-toggle="tab" href="#signin">Anmelden</a>
+                             </li>
+                           </ul>
+                           <!-- Tab content -->
+                           <div class="tab-content">
+                               <div class="tab-pane active" id="signup" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                                   <form class="modal-form">
+                                       <div class="row">
+                                           <div class="col-12">
+                                                 <input type="text" class="form-control form-control-lg" id="companyName" placeholder="Firma">
+                                           </div>
+                                           <div class="col-12">
+                                                   <select id="gender" class="mb-3" aria-label="Large select example">                                                       
+                                                       <option value="1">Männlich</option>
+                                                       <option value="2">Weiblich</option>
+                                                   </select>
+                                           </div>
+                                           <div class="col-12 col-sm-6">
+                                                   <input type="text" class="form-control form-control-lg" id="firstName" placeholder="Vorname">
+                                           </div>
+                                           <div class="col-12 col-sm-6">
+                                                   <input type="text" class="form-control form-control-lg" id="lastName" placeholder="Nachname">
+                                           </div>
+                                            <div class="col-12">
+                                                <input type="email" class="form-control form-control-lg" id="email" placeholder="E-mail">
+                                            </div>
+                                           <div class="col-12 col-sm-6 password-container">
+                                                <input type="password" class="form-control form-control-lg" id="password" placeholder="passwort*" />
+                                                <span id="showSignUpPassword" class="password-eye-icon"><i class="fa-solid fa-eye"></i></span>   
+                                                <span id="hideSignUpPassword" class="password-eye-icon"><i class="fa-solid fa-eye-slash"></i></span>   
+                                           </div>                                    
+                                           <div class="col-12 col-sm-6 password-container">
+                                                   <input type="password" class="form-control form-control-lg" id="confirmPassword" placeholder="Passwort wiederholen*" /> 
+                                                   <span id="showSignUpConfirmPassword" class="password-eye-icon"><i class="fa-solid fa-eye"></i></span>                                                                                        
+                                                   <span id="hideSignUpConfirmPassword" class="password-eye-icon"><i class="fa-solid fa-eye-slash"></i></span>                                                                                        
+                                           </div> 
+                                           <div class="col-12 terms-and-conditions">
+                                                <div class="d-flex justify-content-start align-items-start align-items-lg-center gap-2">
+                                                    <input class="form-check-input" type="checkbox" value="" id="tandC">
+                                                    <label class="form-check-label" for="tandC">
+                                                        Ich habe die
+                                                        <a href="#" >AGB</a>
+                                                           and
+                                                        <a href="#">Datenschutzbestimmungen</a>
+                                                        gelesen und stimme diesen zu.
+                                                    </label>
+                                                </div>
+
+                                           </div>  
+
+                                           <div class="col-12 subscribe">
+                                                <div class="d-flex justify-content-start align-items-start align-items-lg-center gap-2">
+                                                    <input class="form-check-input" type="checkbox" value="" id="subscribe">
+                                                    <label class="form-check-label" for="subscribe">
+                                                        Trage dich in unsere Abonnentenliste ein, um die neuesten Updates zu erhalten.
+                                                    </label>
+                                                </div>
+                                           </div>
+
+                                        </div>
+                                        <div class="col-12">
+                                           <input class="submit-button" type="submit"  value="REGISTRIEREN">
+                                        </div>
+                                       
+                                   </form>
+                               </div>
+                               <div class="tab-pane" id="signin" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                                   <form class="modal-form"> 
+                                       <div class="row">
+                                           <div class="col-12">
+                                               <input type="email" class="w-100 form form-control-lg" placeholder="E-mail" >
+                                           </div>
+                                           <div class="col-12 password-container">                                              
+                                               <input type="password" class="w-100 form form-control-lg" placeholder="Passwort">
+                                               <span id="showSigninPassword" class="password-eye-icon"><i class="fa-solid fa-eye"></i></span>
+                                               <span id="hideSigninPassword" class="password-eye-icon"><i class="fa-solid fa-eye-slash"></i></span>
+                                           </div>
+                                           <div class="col-12">
+                                               <input class="submit-button" type="submit" value="ANMELDEN">
+                                           </div>
+                                       </div>
+                                   </form>
+                               </div>
+                           </div>
+                        </div>
+
+                    </div>
+
+                    
+                </div>
+             </div>
+         </div>
+        <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>   
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>        
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0/dist/js/select2.min.js">
+        </script>
+        <script src="https://kit.fontawesome.com/1d80d6a305.js" crossorigin="anonymous"></script>
+        <script src="index.js"></script> 
+</body>
+</html>
