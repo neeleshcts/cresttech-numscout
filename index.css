@@ -1565,6 +1565,12 @@ img{
 }
 
 
+.offcanvas-footer small{
+    a{
+        text-decoration: none;
+        color: var(--global-white);
+    }
+}
 
 
 /* mix-blend-mode: color-dodge */
