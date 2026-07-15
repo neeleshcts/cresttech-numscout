@@ -113,7 +113,8 @@ document.querySelectorAll('.form-navigation .nav-link').forEach(function(tab) {
 const offcanvasEl = document.getElementById('offcanvasNavbar');
 const hamburger = document.getElementById('hamburger');
 
-document.querySelector('#offcanvasNavbar .btn-close').addEventListener('click', () => {
+const offcanvasBar = document.querySelector('#offcanvasNavbar .btn-close')
+offcanvasBar.addEventListener('click', () => {
   bootstrap.Offcanvas.getInstance(offcanvasEl).hide();
 });
 
@@ -217,3 +218,5 @@ attachBlurValidation('#signUpForm');
 attachBlurValidation('#signInForm');
 
 });
+
+console.log("Script end")
