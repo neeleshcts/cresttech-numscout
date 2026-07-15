@@ -1058,7 +1058,7 @@ img{
 /* Sign in signup */
 .user-creds{
     background: url("assets/svgs/registration-bg.svg") var(--gradient-bg);
-    padding: 24px;
+    padding: 24px 0px;
     border: 0.5px solid #ffffff6e;
 }
 
@@ -1118,7 +1118,7 @@ img{
     width: 100%;    
     font-family: var(--work-sans);
     font-size: 20px;
-    font-weight: bold;
+    font-weight: var(--fw-600);
 }
 
 .modal-header {
@@ -1148,8 +1148,8 @@ img{
 
 .modal-header button{
     position: absolute;
-    right: 0%;
-    top: 0%;       
+    right: -10px;
+    top: -10px;       
     z-index: 3;
     border-radius: 50px;
     background-color: #fff;
@@ -1594,12 +1594,17 @@ img{
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow {
-    height: 25px;
+    height: 28px;
 }
 
 .select2-dropdown{
     z-index: 99999 !important;
 }
+
+.select2-search--dropdown{
+    display: none;
+}
+
 
 
 .offcanvas-footer small{
@@ -1613,10 +1618,18 @@ ul.nav.nav-underline{
     li.nav-item{
         padding: 0.5rem 0;
     }
+    li.nav-item a:active,
+    li.nav-item a:hover{
+        color: grey;
+    }
 }
 
 .nav-underline .nav-link{
     border-bottom: 0px;
+}
+
+.user-creds .tab-content{
+    margin-top: 1rem;
 }
 
 /* mix-blend-mode: color-dodge */
@@ -1876,9 +1889,7 @@ ul.nav.nav-underline{
     border-radius: 7px;
 }
 
-.user-creds .tab-content{
-    margin-top: 1rem;
-}
+
 
 .form-control-lg {
     padding: 8px 10px;
