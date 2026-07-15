@@ -1059,7 +1059,14 @@ img{
 .user-creds{
     background: url("assets/svgs/registration-bg.svg") var(--gradient-bg);
     padding: 24px;
+    border: 0.5px solid #ffffff6e;
 }
+
+.modal-form .form-control{
+
+}
+
+
 
 
 .form-navigation li{
@@ -1089,7 +1096,7 @@ img{
     margin-top: 1rem;
     margin-bottom: 1rem;
     color: #ffff;
-    border: 1px solid var(--global-white);
+    border: 1px solid #ffffff6e;
     
 }
 .modal-form input:focus{
@@ -1125,9 +1132,17 @@ img{
     background-color: #fff;
 }
 
+.form-check-input[type=checkbox] {
+    height: 1.25rem;
+    width: 1.25rem;
+    border-radius: 0;
+    
+}
+
 .modal-form label {
         font-size: var(--fs-15);
         line-height: var(--lh-19);
+        font-weight: var(--fw-300);
         color: var(--global-white);
     }
 
@@ -1229,7 +1244,7 @@ img{
 .select2-container .select2-selection--single,
 .select2-container .select2-selection--multiple {
     background-color: transparent !important;
-    border: 1px solid #ced4da;
+    border: 1px solid #ffffff6e;
     min-height: 48px !important;
     border-radius: 0.375rem;
     margin-top: 1rem;
@@ -1269,7 +1284,7 @@ img{
 /* Search box */
 .select2-search--dropdown .select2-search__field {
     background-color: transparent !important;
-    border: 1px solid #ced4da;
+    border: 1px solid #ffffff6e;
     color: #fff;
     border-radius: 0.375rem;
 }
@@ -1392,8 +1407,8 @@ img{
 
 .reg-close {
     position: absolute;
-    right: 3%;
-    top: 2%;
+    right: -2%;
+    top: -2%;
     border: 0;
     height: 40px;
     width: 40px;
@@ -1402,10 +1417,16 @@ img{
     font-weight: var(--fw-400)
 }
 
+.user-creds ul.nav-underline li.nav-item a{
+    font-weight: var(--fw-600);
+}
+
+.modal-form input, .modal-form select{
+    border-radius: 3px;
+}
+
 .user-creds .nav-underline .nav-link.active, .nav-underline .show>.nav-link {
-    font-weight: 700;
-    /* color: var(--bs-nav-underline-link-active-color); */
-    /* border-bottom-color: currentcolor; */
+    font-weight: var(--fw-600);
     color: white;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
@@ -1460,6 +1481,11 @@ img{
     border-bottom-right-radius: 0;    
 }
 
+#userCreds {
+    padding: .375rem;
+    border-radius: 7px;
+}
+
 /* ===========================
    Select2 Container (the visible box)
    =========================== */
@@ -1498,11 +1524,13 @@ img{
     box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
 
+
+
 /* ===========================
    Dropdown panel
    =========================== */
 .select2-dropdown {
-    background: var(--background-gradient) !important;
+    background:  url('assets/svgs/registration-bg.svg') var(--gradient-bg) !important;
     border: 1px solid #ced4da;
     border-radius: 0 0 0.375rem 0.375rem;
 }
@@ -1527,6 +1555,10 @@ img{
     background-color: transparent;
 }
 
+.modal-dialog-scrollable .modal-body, 
+.modal-dialog-scrollable .modal-content{    
+    overflow: unset;
+}
 
 
 /* Selected option */
@@ -1540,7 +1572,7 @@ img{
 .select2-search--dropdown .select2-search__field {
     background-color: transparent;
     border: 1px solid #ced4da;
-    border-radius: 0.375rem;
+    border-radius: 3px;
     color: #fff;
     padding: 6px 10px;
 }
@@ -1552,8 +1584,8 @@ img{
 .select2-container .select2-selection--single,
 .select2-container .select2-selection--multiple {
     min-height: 38px;
-    border: 2px solid #fff;
-    border-radius: .375rem;
+    border: 1px solid #ffffff6e;
+    border-radius: 3px;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__rendered {
@@ -1810,17 +1842,17 @@ ul.nav.nav-underline{
 }
 
 .select2-selection__rendered{
-    padding: 0px 16px !important;
+    padding: 0px 8px !important;
     border-radius: 0.5rem;
 }
 
 .reg-close {
     position: absolute;
-    right: 0%;
-    top: 0%;
+    right: -14px;
+    top: -14px;
     border: 0;
-    height: 25px;
-    width: 25px;
+    height: 33px;
+    width: 33px;
     border-radius: 55px;
     font-size: var(--fs-24);
     font-weight: var(--fw-400);
@@ -1828,6 +1860,35 @@ ul.nav.nav-underline{
     justify-content: center;
     align-items: center;
 }
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+    line-height: 40px;
+}
+
+.user-creds h1.modal-title{
+    font-size: var(--fs-22);
+    line-height: var(--lh-26);
+}
+
+.user-creds{
+    background: url("assets/svgs/registration-bg.svg") var(--gradient-bg);
+    padding: 24px 8px;
+    border: 0.5px solid #ffffff6e;
+    border-radius: 7px;
+}
+
+.user-creds .tab-content{
+    margin-top: 1rem;
+}
+
+.form-control-lg {
+    padding: 8px 10px;
+}
+
+.modal-form .submit-button{
+    font-size: var(--fs-14);
+    line-height: var(--lh-21);
+}
+
 }
 
 
@@ -1896,7 +1957,7 @@ ul.nav.nav-underline{
 
 
     .select2-container--default .select2-selection--single .select2-selection__rendered{
-        font-size: 21px;
+        font-size: 18px;
     }
 
     .modal-form label {
