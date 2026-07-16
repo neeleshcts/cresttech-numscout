@@ -1153,8 +1153,8 @@ img{
     z-index: 3;
     border-radius: 50px;
     background-color: #fff;
-    width: 50px;
-    height:50px;
+    width: 40px;
+    height:40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1404,7 +1404,8 @@ img{
 
 .svg-inline--fa {
     width: auto;
-    font-size: 24px;
+    font-size: 21px;
+    font-weight:lighter;
 }
 
    /* user credentials */
@@ -1575,6 +1576,7 @@ img{
 .modal-dialog-scrollable .modal-body, 
 .modal-dialog-scrollable .modal-content{    
     overflow: unset;
+    border-radius: 10px;
 }
 
 
@@ -1827,9 +1829,9 @@ ul.nav.nav-underline{
 
 
 
-    .svg-inline--fa {    
+    /* .svg-inline--fa {    
         font-size: 20px;
-    }
+    } */
     
 
     
@@ -1841,12 +1843,7 @@ ul.nav.nav-underline{
 
     .modal-form input{
         font-size: 15px;
-    }
-
-    .modal-header button{
-        width: 30px;
-        height: 30px;        
-    }    
+    }  
 
 }
 
@@ -1924,6 +1921,11 @@ ul.nav.nav-underline{
     line-height: var(--lh-21);
 }
 
+.modal-header button{
+    width: 35px;
+    height: 35px;    
+}
+
 }
 
 
@@ -1999,18 +2001,14 @@ ul.nav.nav-underline{
         font-size: 18px;
     }
 
-    .modal-header button{
-        width: 50px;
-        height: 50px;        
-    }
 
         /* .footer-quick-links ul li,.footer-address div p, .footer-address div a{
             font-size: 22px;
         } */
 
-    .svg-inline--fa {    
+    /* .svg-inline--fa {    
         font-size: 24px;
-    }
+    } */
 }
 
 
