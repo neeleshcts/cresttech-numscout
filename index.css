@@ -1162,6 +1162,9 @@ img{
 
 .close-button-icon-container{
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .close-icon{
@@ -1171,6 +1174,20 @@ img{
     transform: translate(-50%,-50%);
 }
 
+#user-creds
+{
+    .close-icon-button-icon-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .row>*{
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+    }
+    
+} 
 
 .fa-x{
     color: var(--global-black);    
@@ -1632,13 +1649,8 @@ ul.nav.nav-underline{
     margin-top: 1rem;
 }
 
-.reg-close svg{
-    width: 100%;
-    height: 100%;    
-}
-
-.reg-close svg circle{
-    background-color: #ffffff6e;
+.fa-xmark{
+  font-weight: lighter !important;
 }
 
 /* mix-blend-mode: color-dodge */
@@ -1816,7 +1828,7 @@ ul.nav.nav-underline{
 
 
     .svg-inline--fa {    
-        font-size: 16px;
+        font-size: 20px;
     }
     
 
