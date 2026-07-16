@@ -1398,6 +1398,11 @@ img{
     border-color:unset !important;
 }
 
+.form-check-input:checked{
+    background-color: transparent;
+    border-color: #ffffff6e;
+}
+
 
 
 /* fa-customization */
