@@ -1407,7 +1407,13 @@ img{
 
 /* fa-customization */
 
-.svg-inline--fa {
+.svg-inline--fa.fa-x-mark {
+    width: auto;
+    font-size: 21px;
+    font-weight:lighter;
+}
+
+.svg-inline--fa.fa-eye{
     width: auto;
     font-size: 14px;
     font-weight:lighter;
